@@ -32,5 +32,4 @@ install:
 
 script:
     # - kc-preparer
-    - echo $NEXUS_URL
     - echo $FOO
