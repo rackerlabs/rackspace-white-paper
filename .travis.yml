@@ -16,19 +16,18 @@ matrix:
       - rvm: 2.2.3
         env:
           - NEXUS_URL=http://172.99.65.43:9000
-          - FOO=BAR
+          - secure: "WstENY6lm9AW0EDrV4YDTJwh9NJ0PXnxVcVYPsV0nTR9HBeN+PPoDSM8JyObnE3yJr1D9AoQIwKjzZOzELP8Auv26GIeV2YP3H/1wonIXxtE/ouaO/tun4nM4sZUaLf/aJc4L/OOs8f6G4s9GuoyQFOLyUc75eMYX5d9GKpkeTd6eBVYRz4RQWh7cwvJ1M8Xrd4jRufELyQw3J+vThK0r4lsDTYlcmfCs3x0EfgxhTbrGY+gRkkqMuT5BBAhbAiFPtrlUZRtTugcFRGnQFYIuLwv0pYNtAU+M5ytj2hXg1RdibRHEQKoQAx9IdKFQstye2VmLWNM+yP1B7fgHUFp/2BYP5BZepKAUgh85clc+nQfU87ldnUm4gqojqHBw0zWtNrxSsAxFYss4M3VVWIJs3TvBYIKyNV7E7ob2XWU8OVsr+/g6C5F0ZPMztXMuZtfk9X7bVf9fqaF6YFtNOh7wi1PYJmyXPWAJo8iMecwVcYYRqE9h/Bgusc5TfMgSsEm2KXCPj4SYcqL6Q5O50H3FhYW6B+OylDJ4/Ag8BrwyYHPV5jCUkKx0qa3Qydd27bR2orBWzLr1fyFJsSjqBnKfXdSmemenZbWdfBLHvLRMUNwm2AibFKDDBaFL+x5fnZT3t4EESRJ2C71Pi/IoHVkKMyCBRvF0fwZUIUzESWCXyg="
 
       # PROD
       - rvm: 2.2.3
         env:
-          - NEXUS_URL=https://developer.rackspace.com:9000
-          - FOO=BAZ
+          # - NEXUS_URL=https://developer.rackspace.com:9000
+          - secure: "SA8MTv4GwZN11JJpOcNKKqllAN2mRL60NUKBdsFBXDQ4o3B87arEGDaz+hf/0gZ4LhRD2q9b5L+fUBSJTSRoWPHFwBO4GasRJsLcUcgIwHQ1vRRNApVktoHIairFI9eCfo/rlYcio2hvFZYM+KCUzz+1sjki61To/676kbmzv9koSGia4TXtFFbfTc89jJbEzMt5OMbHQYFTNY+WhmhkVaVJacYN8BsBVcIGZ9zNk1QUa891gzgUmx1yD6PcbQFdt8Ne51HvY5f8YffAcr2lrP/bBFgEt3+HdGWVNzdKC9Yxw2wrQaf8qhpUZuKe251GzjfQJlxWmHl5hBFUJUfpqPNALRFArPxxkKzSHF5O3Jtfa/v4Q0SagRQpxKq0oL6VRFAKHjq6EK1NwyhiwoRUbY9zFdR4Hxx2Nbix+QWodjHfhtU/e8Rk6zXBLixR357NlSEDnannA1RvFAcQ0b4GKhkI1EnD1R/ODsVn0MRMa/4/ffNHOLEL66rKA+fuf9iytRx3WPmxeYyhWW5Ir/6bhweGIFeTzJfADWExzMFIqMrE6NYzybPNUfbbKLcE4TgdRJmV5s4e7uIVzXj9PjZeDNPxnJEa5XRnPLv3CUyX6MYbeYcxHWi+CqwpNbxr5WleiaJuH6fWSg+PGsrTl1MFJ87lkEOvmDBQT07B5bgGp6M="
 
 install:
-    # - gem install specific_install
-    # - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
+    - gem install specific_install
+    - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
     - echo $TRAVIS_COMMIT
 
 script:
-    # - kc-preparer
-    - echo $FOO
+    - kc-preparer
