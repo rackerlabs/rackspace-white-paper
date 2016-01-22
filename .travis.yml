@@ -1,9 +1,6 @@
 
 language: ruby
 
-rvm:
-    - 2.2.3
-
 branches:
   only:
       - master
@@ -16,14 +13,16 @@ env:
 matrix:
   include:
       # DEV
-      - env:
-        - NEXUS_URL=http://172.99.65.43:9000
-        - FOO=BAR
+      - rvm: 2.2.3
+        env:
+          - NEXUS_URL=http://172.99.65.43:9000
+          - FOO=BAR
 
       # PROD
-      - env:
-        - NEXUS_URL=https://developer.rackspace.com:9000
-        - FOO=BAZ
+      - rvm: 2.2.3
+        env:
+          - NEXUS_URL=https://developer.rackspace.com:9000
+          - FOO=BAZ
 
 install:
     # - gem install specific_install
