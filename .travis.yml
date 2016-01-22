@@ -1,0 +1,36 @@
+
+language: ruby
+
+rvm:
+    - 2.2.3
+
+branches:
+  only:
+      - master
+
+env:
+  global:
+      - KC_DOC_ROOT=content
+      - KC_BASE_URL=https://github.com/rackerlabs/rackspace-white-paper
+
+matrix:
+  include:
+      # DEV
+      - env:
+        - NEXUS_URL=http://172.99.65.43:9000
+        - FOO=BAR
+
+      # PROD
+      - env:
+        - NEXUS_URL=https://developer.rackspace.com:9000
+        - FOO=BAZ
+
+install:
+    # - gem install specific_install
+    # - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
+    - echo $TRAVIS_COMMIT
+
+script:
+    # - kc-preparer
+    - echo $NEXUS_URL
+    - echo $FOO
