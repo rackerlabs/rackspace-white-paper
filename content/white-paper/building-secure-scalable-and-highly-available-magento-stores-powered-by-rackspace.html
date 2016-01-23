@@ -1,0 +1,389 @@
+---
+node_id: 3474
+title: 'Building Secure, Scalable and Highly Available Magento Stores, Powered by Rackspace Solutions'
+type: whitepaper
+created_date: '2013-05-17'
+created_by: Rackspace Support
+last_modified_date: '2015-07-21'
+last_modified_by: Max Francisco
+product: White Paper
+product_url: white-paper
+resource: 'https://www.rackspace.com/knowledge_center/sites/default/files/whitepaper_pdf/Magento Ecommerce Architectures Whitepaper 2013.pdf'
+---
+
+<p><strong>Um olhar com mais atenção nas arquiteturas de referência de comércio eletrônico</strong></p>
+
+<p>Mahesh Gandhe, gerente sênior de soluções para comércio eletrônico e SaaS/ISV<br />
+R. J. Rowntree, gerente de canal de comércio<br />
+John Engates, diretor executivo de tecnologia</p>
+
+<h3>Resumo</h3>
+
+<p>A Magento oferece <a href="http://www.rackspace.com/pt/ecommerce-hosting/">soluções para comércio eletrônico</a> flexíveis e expansíveis, concebidas para ajudar as empresas a crescer e ter sucesso on-line. A plataforma da Magento conta com a confiança de mais de 150.000 empresas, incluindo algumas das principais marcas do mundo. A Magento Enterprise oferece o seu melhor desempenho em uma infraestrutura otimizada para seus requisitos exigentes. Apenas executar a Magento em servidores genéricos pode causar problemas de desempenho que se traduzem em carrinhos de compras abandonados, páginas de carregamento lento e perda de receita. Com mais de 1.000 de implementações da Magento em todo o mundo, de clientes SMB a Fortune 500, a Rackspace desenvolveu competências e conhecimentos básicos em infraestruturas Magento. Atualmente a Rackspace hospeda um percentual maior de implementações Magento no mundo do que qualquer outro provedor de hospedagem.As <sup>[1]</sup> <a href="http://ptrackspace.convertlanguage.com/pt/ecommerce-hosting/magento/">"soluções de hospedagem para comércio eletrônico da Rackspace para Magento"</a> oferecem infraestrutura aperfeiçoada para atender aos requisitos da Magento. São usados componentes de infraestrutura comprovados, otimizados e expansíveis para proporcionar desempenho e confiabilidade sem igual. Tudo conta com o apoio de uma equipe formada por especialistas em infraestrutura capazes de prestar suporte a configurações sob medida para suas necessidades específicas. O resultado final é um site Magento rápido, sólido e livre de problemas, com desempenho excepcional, proporcionando, assim, a experiência de usuário rápida que seus clientes esperam.<br />
+<br />
+Com base em profundo conhecimento das implementações Magento, este white paper fornece orientação e arquitetura de referência para o desenvolvimento de sites de comércio eletrônico de classe internacional na plataforma Magento.</p>
+
+<h3>1. Introdução</h3>
+
+<p>Quer você esteja lançando sua primeira loja on-line na plataforma de comércio eletrônico Magento, ou refazendo a arquitetura do site com a Magento Enterprise, você precisa de um parceiro de nuvem ou híbrido experiente em hospedagem de plataformas Magento para desenvolver lojas on-line seguras, expansíveis e altamente disponíveis.<br />
+<br />
+Com a Rackspace, você fica nas mãos de um <a href="http://www.rackspace.com/pt/ecommerce-hosting/magento/">parceiro em hospedagem Magento</a> de qualidade comprovada, que ajudou mais de 1.000 clientes em todo o mundo, de SMBs a empresas Fortune 500. De acordo com um estudo da autoridade em publicações sobre comércio eletrônico varejista na internet, a Rackspace é atualmente o provedor de hospedagem número um dos principais 1.000 sites varejistas da internet. Atualmente a Rackspace hospeda <a href="http://trends.builtwith.com/shop/Magento">um percentual maior de implementações Magento no mundo do que qualquer outro provedor de hospedagem</a>. Para dar suporte a você como uma equipe, a Rackspace entrou no programa de parceiros em hospedagem Magento como parceiro de nível Platinum.<br />
+<br />
+"Soluções de hospedagem para comércio eletrônico da Rackspace para Magento", doravante mencionadas como "a solução", é uma <a href="http://www.rackspace.com/pt/ecommerce-hosting/magento/">plataforma Magento para comércio eletrônico otimizada pela hospedagem Rackspace</a>. Esta solução é uma combinação de várias ofertas de produtos Rackspace, incluindo hospedagem dedicada, hospedagem em nuvem, hospedagem híbrida e serviços adicionais destinados a aumentar o desempenho.</p>
+
+<h3>2. Casos de uso</h3>
+
+<p>Comércio eletrônico geralmente refere-se ao processo de compra e venda de diversos produtos e serviços por meio do ambiente on-line. Os sites de comércio eletrônico são, na maioria dos casos, sites bem projetados, com volume elevado de tráfego, embora a hospedagem de comércio eletrônico permita que esses sites sejam hospedados em hardware de servidor compartilhado ou dedicado. A hospedagem de comércio eletrônico da Rackspace para Magento suporta os seguintes casos de uso mais comuns de hospedagem de comércio eletrônico:</p>
+
+<ol>
+	<li><strong>100% de tempo de funcionamento</strong> – Quando o seu site é a sua caixa registradora, ele tem de ficar aberto para os negócios – sempre. Assim, os sites de comércio eletrônico são obrigados a serem altamente disponíveis. A solução pode garantir 100% de tempo de funcionamento de produção, desde que seja implementada uma topologia recomendada.</li>
+	<li><strong>Carregamento da página em menos dois segundos</strong> – Carregamento de páginas da web de comércio eletrônico em até dois segundos, mesmo durante o horário de pico, é norma do setor. A solução suporta carregamentos de página mais rápidos.</li>
+	<li><strong>Segurança de dados sigilosos</strong> – Sites de comércio eletrônico requerem uma infraestrutura muito segura para o gerenciamento de dados sigilosos no servidor coletadas dos usuários do site, incluindo informações de cartão de crédito. A solução ajuda os clientes em conformidade com o PCI a usar infraestrutura dedicada compatível com PCI e gateways de pagamento de terceiros para infraestrutura de nuvem.</li>
+	<li><strong>Escalabilidade</strong> – A capacidade de lidar com picos repentinos e/ou sazonais na demanda nos períodos de férias é o caso de uso mais importante para sites de comércio eletrônico. A solução suporta este caso de uso usando a infraestrutura de nuvem para tornar a sensação da sua infraestrutura virtualmente ilimitada.</li>
+</ol>
+
+<p><strong>Em resumo, ajudamos os comerciantes a arquitetar e implantar lojas de comércio eletrônico Magento seguras, escaláveis ​​e altamente disponíveis na infraestrutura da Rackspace.</strong></p>
+
+<h3>3. Fatores que influenciam o planejamento da solução</h3>
+
+<p>Vários fatores influenciam a escolha de hardware para sua loja de comércio eletrônico on-line. Alguns dos fatores mais importantes a considerar incluem:<br />
+<br />
+<strong>3.1 QUE VERSÃO MAGENTO É APROPRIADA PARA VOCÊ?</strong><br />
+Você pode escolher "Magento Community" ou "Magento Enterprise" para desenvolver a sua solução. Para decidir que versão é a melhor para você, <a href="http://magento.com/products/overview" target="_blank">clique aqui</a> para ver as descrições das versões Magento Community, Enterprise e Go.<br />
+<br />
+<strong>3.2 ONDE ARMAZENAR DADOS DE CARTÃO DE CRÉDITO E COMO TRANSMITI-LOS?</strong><br />
+Alguns outros fatores importantes a considerar são o lugar onde você deseja armazenar os dados de cartão de crédito e como você transmite esses dados.<br />
+<br />
+<strong>3.2.1 OPÇÕES DISPONÍVEIS PARA ARMAZENAMENTO</strong><br />
+Você pode armazenar dados de cartões de crédito em um centro de dados Rackspace ou usar um gateway de pagamento de terceiros para armazenar informações de cartão de crédito usando APIs. O gateway de pagamento de terceiros é mais comum, uma vez que transfere grande parte da sua carga de PCI para esse provedor. Dito isto, se você exigir que informações de cartões de crédito e outros dados confidenciais sejam alojados dentro dos seu ambiente, podemos criar soluções para <a href="http://www.rackspace.com/pt/ecommerce-hosting/pci/">ajudá-lo a manter a conformidade com o PCI</a>.<br />
+<br />
+<strong>3.2.2 COMO VOCÊ DECIDE QUAL A OPÇÃO IDEAL PARA VOCÊ?</strong><br />
+Um modo de saber qual é a opção certa para sua empresa é comparar o custo de usar um gateway de pagamento de terceiros com o custo de armazenamento de informações de cartão de crédito em um centro de dados. Se você processa uma quantidade menor de transações de cartão de crédito, pode achar que o uso de um gateway de pagamento de terceiros é mais econômico e a melhor opção, desde que esse método seja adequado às políticas da empresa. Se o volume de transações de cartão de crédito é muito alto, você pode considerar mais econômico armazenar as informações de cartão de crédito em um centro de dados Rackspace e passar por auditorias de conformidade com o PCI. As políticas da sua empresa e o volume de transações de cartão de crédito, juntamente com outros fatores que não serão examinados aqui, podem ajudar a determinar onde armazenar os dados do cartão de crédito.<br />
+<br />
+Ao escolher a opção de transmitir informações de cartão de crédito a partir do lado do servidor usando APIs, sua infraestrutura de servidor passa a fazer parte da conformidade com o PCI. Por outro lado, o uso de APIs de navegador cliente exclui a sua infraestrutura de servidores do âmbito da conformidade com o PCI.<br />
+<br />
+<strong>3.3 NÚMERO MÁXIMO DE USUÁRIOS SIMULTÂNEOS</strong><br />
+É o número de clientes que podem fazer login em sua loja on-line ao mesmo tempo e realizar pedidos sem encontrar problemas relacionados à alocação de recursos. Trata-se de uma consideração importante na escolha da arquitetura de referência para a sua empresa. Recomendamos projetar seu sistema para 1,5 vez o pico de carga que você esperar para suas transações diárias.<br />
+<br />
+Além dos fatores discutidos acima, os seguintes parâmetros de negócios também influenciarão suas escolhas de planejamento de arquitetura de referência:</p>
+
+<ul>
+	<li>Tamanho do catálogo</li>
+	<li>Tempo médio de navegação por usuário, (ou seja, de cinco minutos, 20 minutos, 30 minutos)</li>
+	<li>Quantidade média e máxima de visitantes por dia</li>
+	<li>Média de pedidos por dia</li>
+	<li>Pico de pedidos por hora e por dia</li>
+	<li>Pico de pedidos por hora e por dia na época de festas de final de ano</li>
+	<li>Número de usuários simultâneos no painel do administrador</li>
+	<li>Quantidade de registros de SKUs/produtos no catálogo</li>
+	<li>Quantidade de categorias</li>
+	<li>Usuários administrativos: mais de seis usuários administrativos exigirá a separação dessa função para o seu próprio ambiente)</li>
+	<li>Ponte de pagamento: esse produto Magento pode ajudar com PCI/DSS e requer infraestrutura adicional</li>
+</ul>
+
+<p>Como regra geral, lembre-se de que o número de usuários e transações simultâneos ajuda a dimensionar os servidores web. O número de SKUs à venda no site ajuda a dimensionar o servidor de banco de dados.</p>
+
+<h3>4. Visão geral das arquiteturas de referência</h3>
+
+<p>Com a experiência de atendimento a milhares de clientes Magento no passado, desenvolvemos quatro <a href="http://www.rackspace.com/pt/ecommerce-hosting/reference_architectures/">arquiteturas de referência</a> como pontos de partida:<br />
+<br />
+<strong>4.1 VERSÃO MAGENTO COMMUNITY – ARQUITETURA DE REFERÊNCIA BÁSICA</strong><br />
+Esta configuração é ideal para o varejista prestes a começar com um orçamento menor, implementando a versão Magento Community ou uma versão Magento Enterprise básica. O custo da entrada dessa solução é bastante baixo, com grande vantagem para o crescimento rápido.<br />
+<br />
+Trata-se de uma pura configuração de nuvem na qual o servidor web e banco de dados residem na nuvem. Nessa arquitetura, propomos a segmentação de rede de nuvem entre servidores web e de banco de dados por razões de segurança. Nessa topologia, você pode adicionar servidores web e de banco de dados para obter escalabilidade. Recomenda-se armazenar informações de cartão de crédito do cliente fora da rede Rackspace usando gateways de pagamento de terceiros durante a implantação para a nuvem pública.<br />
+<br />
+<img alt="" height="401" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-4.png" width="499" /><br />
+<strong>Detalhes de configuração:</strong></p>
+
+<p><em>1 Load balancing em nuvem (pública):</em></p>
+
+<ul>
+	<li>SSL</li>
+</ul>
+
+<ul>
+	<li>Menos de 100 conexões simultâneas</li>
+	<li>50 GB de banda larga</li>
+</ul>
+
+<p><em>2 Cloud Servers para web:</em></p>
+
+<ul>
+	<li>16 GB, 6 vCPUs, 620 GB de armazenamento</li>
+	<li>Verificações HTTPS do Cloud Monitoring</li>
+	<li>Varnish para caching</li>
+</ul>
+
+<p><em>2 Cloud Servers para banco de dados (mestre/escravo)</em></p>
+
+<ul>
+	<li>Memcached</li>
+	<li>8 GB, 4 vCPUs, 320 GB de armazenamento</li>
+	<li>Cloud Backup</li>
+	<li>Verificação de porta TCP do Cloud Monitoring</li>
+	<li>SSD de 100 GB do Cloud Block Storage</li>
+	<li>Rede em nuvem isolada com conectividade apenas para servidores web</li>
+</ul>
+
+<p>Cloud Files e a CDN da Akamai</p>
+
+<ul>
+	<li>50 GB de capacidade</li>
+	<li>50 GB de banda larga</li>
+</ul>
+
+<p><em>Recomendações sobre o serviço:</em></p>
+
+<ul>
+	<li>Escolha uma <a href="http://www.rackspace.com/pt/cloud/managed_cloud/overview_b/">conta de Nuvem Gerenciada</a> e economize tempo, deixando-nos gerenciar sua infraestrutura e implantar seus servidores.</li>
+</ul>
+
+<p><strong>4.2 VERSÃO MAGENTO ENTERPRISE – ARQUITETURA DE REFERÊNCIA INTERMEDIÁRIA</strong><br />
+Essa é a solução ideal para varejistas procedentes da versão Enterprise. Combina baixo custo de entrada com mais recursos alocados aos servidores individuais e pode ser dimensionada para atender às demandas crescentes.<br />
+<br />
+Essa configuração é desenvolvida usando-se servidores dedicados para os servidores web e de banco de dados. O servidor web e de banco de dados único é segmentado por trás do firewall físico. Nesta topologia, as informações de cartão de crédito do cliente são armazenadas usando-se um gateway de pagamento de terceiros.</p>
+
+<p><img alt="" height="379" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-6.png" width="499" /></p>
+
+<p><strong>Detalhes de configuração:</strong></p>
+
+<p><em>Segurança 1 ASA 5510 e firewall</em></p>
+
+<ul>
+	<li>1 VPN site a site, 5 VPNs clientes</li>
+	<li>RackConnect para Cloud Files</li>
+</ul>
+
+<p><em>1 servidor web melhorado Two Silver (segmento DMZ)</em></p>
+
+<ul>
+	<li>Red Hat<sup>®</sup> Enterprise Linux<sup>®</sup> 6</li>
+	<li>CPU Dual Quad Core, com 24 GB de RAM</li>
+	<li>RAID 1 2 x 146 GB (SO), RAID 10 4 x 146 GB (dados)</li>
+	<li>Antivírus Sophos</li>
+	<li>Agente de backup de base</li>
+</ul>
+
+<p><em>1 servidor de banco de dados melhorado Two Silver (segmento interno)</em></p>
+
+<ul>
+	<li>Red Hat® Enterprise Linux® 6</li>
+	<li>MySQL</li>
+	<li>Memcached</li>
+	<li>CPU Dual Quad Core, com 24 GB de RAM</li>
+	<li>RAID 1 2 x 146 GB (SO), RAID 10 4 x 146 GB (dados)</li>
+	<li>Agente de backup e agente MySQL de base</li>
+</ul>
+
+<p><em>Cloud Files e a CDN da Akamai</em></p>
+
+<ul>
+	<li>50 GB de capacidade</li>
+	<li>50 GB de banda larga</li>
+</ul>
+
+<p><em>Mailgun – pacote expresso de base</em><br />
+<br />
+<strong>4.3 VERSÃO MAGENTO ENTERPRISE – ARQUITETURA DE REFERÊNCIA AVANÇADA</strong><br />
+Esta configuração serve a varejistas estabelecidos com maior tráfego que justifique uma solução de load balancing para padrões de tráfego imprevisíveis. Esta solução também oferece aos varejistas a capacidade de passar para a nuvem em aumentos repentinos de tráfego. Varejistas que realizam promoções por meio de liquidações, campanhas publicitárias e blitz em redes sociais podem se beneficiar desta solução.<br />
+<br />
+Essa configuração incorpora <a href="http://www.rackspace.com/pt/hosting_solutions/hybrid_hosting/">configuração híbrida</a> usando <a href="http://www.rackspace.com/pt/cloud/hybrid/dedicated_cloud/rackconnect/">RackConnect<sup>®</sup></a>. Usa servidores dedicados para servidores de banco de dados e web. Picos em períodos de festas de final de ano ou aumentos repentinos na carga pode ser passados para os servidores em nuvem, com licenças Magento Peak Demand. Servidores web e de banco duplos são segmentados por trás do firewall físico. As informações de cartão de crédito do cliente são armazenadas em gateway de pagamento de terceiros.<br />
+<br />
+<br />
+<img alt="" height="376" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-8.png" width="498" /><br />
+<strong>Detalhes de configuração:</strong></p>
+
+<p><em>Segurança 1 ASA 5510 e firewall</em></p>
+
+<ul>
+	<li>1 VPN site a site, 5 VPNs clientes</li>
+</ul>
+
+<p><em>Gerenciador de tráfego local F5 1600</em></p>
+
+<ul>
+	<li>RackConnect<sup>®</sup> para Cloud Files habilitado para transferência com licenças Magento Peak Demand</li>
+</ul>
+
+<p><em>2 servidores web melhorados Two Silver (segmento DMZ)</em></p>
+
+<ul>
+	<li>Red Hat<sup>®</sup> Enterprise Linux<sup>®</sup> 6</li>
+	<li>CPU Dual Quad Core, com 24 GB de RAM</li>
+	<li>RAID 1 2 x 146 GB (SO), RAID 10 4 x 146 GB (dados)</li>
+	<li>Antivírus Sophos</li>
+	<li>Agente de backup de base</li>
+</ul>
+
+<p><em>2 servidores de banco de dados melhorados Two Silver (segmento interno)</em></p>
+
+<ul>
+	<li>Red Hat<sup>®</sup> Enterprise Linux<sup>®</sup> 6</li>
+	<li>MySQL</li>
+	<li>Memcached</li>
+	<li>CPU Dual Quad Core, com 24 GB de RAM</li>
+	<li>RAID 1 2 x 146 GB (SO), RAID 10 4 x 146 GB (dados)</li>
+	<li>Agente de backup e agente MySQL de base</li>
+</ul>
+
+<p><em>4 Cloud Servers para web (página inicial e lógica de catálogo)</em></p>
+
+<ul>
+	<li>4 GB, 2 vCPUs, 160 GB de armazenamento</li>
+</ul>
+
+<ul>
+	<li>Verificações HTTPS do Cloud Monitoring</li>
+	<li>Cloud Files e a CDN da Akamai</li>
+	<li>50 GB de capacidade</li>
+	<li>50 GB de banda larga</li>
+</ul>
+
+<p><em>Mailgun – pacote expresso de base</em><br />
+<br />
+<strong>Recomendações sobre o serviço:</strong></p>
+
+<ul>
+	<li>Escolha um <a href="http://www.rackspace.com/pt/cloud/service-levels/managed/">nível de serviço de Nuvem Gerenciada</a> e economize tempo, deixando-nos gerenciar sua infraestrutura.</li>
+	<li>Trabalhe com nossa equipe de <a href="http://www.rackspace.com/pt/enterprise_hosting/advisory_services/">serviços de consultoria</a> para planejar sua viagem perfeita para a nuvem.</li>
+</ul>
+
+<p><strong>4.5 VERSÃO MAGENTO ENTERPRISE – ARQUITETURA DE REFERÊNCIA PREMIER</strong><br />
+Essa configuração foi projetada para dar suporte a varejistas que receber um número de transações on-line maior em comparação com outras configurações. A Rackspace pode fornecer uma infraestrutura resistente e altamente disponível com recursos de failover em todas as camadas da solução. A Rackspace também podem dar orientações sobre conformidade com o PCI para armazenamento de informações de cartão de crédito de forma segura.<br />
+<br />
+Também se trata de uma configuração híbrida desenvolvida com RackConnect, pois usa <a href="http://ptrackspace.convertlanguage.com/pt/managed_hosting/dedicated_servers/">servidores dedicados</a> para servidores de banco de dados e servidores web de hospedagem. Picos em períodos de festas de final de ano ou aumentos repentinos na carga pode ser passados para o <a href="http://www.rackspace.com/pt/cloud/">Rackspace Cloud Servers</a>, com licenças Magento Peak Demand. O produto usa configuração HA para firewalls dedicados e F5 load balancing. Essa topologia permite o armazenamento de informações de cartão de crédito do cliente na rede Rackspace em servidores dedicados. Está em conformidade com o PCI graças à ajuda de produtos de terceiros da Symantec e Alert Logic.</p>
+
+<p><img alt="" height="408" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-9ent2.png" width="500" /></p>
+
+<p><strong>Detalhes de configuração:</strong><br />
+<br />
+<em>Segurança 2 ASA 5520 e firewalls de alta disponibilidade</em></p>
+
+<ul>
+	<li>1 VPN site a site</li>
+	<li>10 VPNs clientes</li>
+</ul>
+
+<p>2 gerenciadores de tráfego local F5 1600 de alta disponibilidade</p>
+
+<ul>
+	<li>RackConnect<sup>®</sup> para Cloud Files habilitado para transferência com licenças Magento Peak Demand</li>
+	<li>Alert Logic Threat Manager IDS + Alert Logic Log Manager</li>
+	<li>SSL, taxa de transferência de 51 a 100 MB</li>
+	<li>10 fontes de registro</li>
+</ul>
+
+<p><em>Firewall para aplicação web Imperva<sup>®</sup> de alta disponibilidade</em></p>
+
+<ul>
+	<li>SLA Gold</li>
+	<li>RSA SecurID® 130</li>
+	<li>10 tokens</li>
+	<li>Certificado SSL veriSign</li>
+	<li>1 domínio</li>
+</ul>
+
+<p><em>2 servidores de carrinho de compras melhorados Two Silver (segmento DMZ)</em></p>
+
+<ul>
+	<li>Red Hat<sup>®</sup> Enterprise Linux<sup>®</sup> 6</li>
+	<li>CPU Dual Quad Core, com 24 GB de RAM</li>
+	<li>RAID 1 2 x 146 GB (SO), RAID 10 4 x 146 GB (dados)</li>
+	<li>Antivírus Sophos</li>
+	<li>Agente de backup de base</li>
+</ul>
+
+<p><em>2 servidores de banco de dados Performance One Silver (multimestre ativo/passivo)</em></p>
+
+<ul>
+	<li>Red Hat<sup>®</sup> Enterprise Linux<sup>®</sup> 6</li>
+	<li>MySQL</li>
+	<li>Memcached</li>
+	<li>CPU Dual Hex Core com 64 GB de RAM</li>
+	<li>RAID 1 2 x 300 GB (SO), RAID 10 4 x 300 GB (dados)</li>
+	<li>Agente de backup e agente MySQL de base</li>
+</ul>
+
+<p><em>4 Cloud Servers para web (página inicial e lógica de catálogo)</em></p>
+
+<ul>
+	<li>4 GB, 2 vCPUs, 160 GB de armazenamento</li>
+	<li>Verificações HTTPS do Cloud Monitoring</li>
+</ul>
+
+<p><em>Cloud Files e a CDN da Akamai</em></p>
+
+<ul>
+	<li>100 GB de capacidade</li>
+	<li>100 GB de banda larga</li>
+</ul>
+
+<p><em>Mailgun – pacote expresso de base</em><br />
+<br />
+<em>Recomendações sobre o serviço:</em></p>
+
+<ul>
+	<li>Escolha uma <a href="http://www.rackspace.com/pt/cloud/managed_cloud/overview_b/">conta de Nuvem Gerenciada</a> e economize tempo, deixando-nos gerenciar sua infraestrutura.</li>
+	<li>Selecione <a href="http://www.rackspace.com/pt/enterprise_hosting/critical_applications/">serviços de aplicativos essenciais</a> para receber um SLA extremamente agressivo com garantia de 100% de tempo de funcionamento da plataforma de produção e um crédito de nível de serviço de 2 vezes.</li>
+	<li>Trabalhe com nossa equipe de <a href="http://www.rackspace.com/pt/enterprise_hosting/advisory_services/">serviços de consultoria</a> para planejar sua viagem perfeita para a nuvem.</li>
+</ul>
+
+<h3>5. Fluxograma para escolher arquitetura de referência</h3>
+
+<p>O fluxograma* a seguir indica como decidir a arquitetura de referência adequada para suas necessidades de negócios. Alternativamente, a equipe de suporte Rackspace pode ajudá-lo a decidir a topologia certa para suas necessidades.<br />
+<br />
+<img alt="" height="400" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-10flowchrt.png" width="497" /><br />
+* Atenção: a recomendação fornecida acima para a escolha da arquitetura de referência ideal baseada no número de usuários simultâneos decorre da nossa experiência em ajudar implementações em mais de 1000 clientes.<br />
+<br />
+** <a href="http://www.magentocommerce.com/product/overview-compare?utm_source=magentocommerce&amp;utm_medium=topnav">http://www.magentocommerce.com/product/overview-compare?utm_source=magentocommerce&amp;utm_medium=topnav</a></p>
+
+<h3>6. Por que somos líder em hospedagem Magento</h3>
+
+<p>Nossos clientes confiam a nós suas necessidades de hospedagem Magento pelas seguintes razões:</p>
+
+<ul>
+	<li><strong>Amplo portfólio de produtos</strong> – Oferecemos hospedagem dedicada e nuvem pública, privada e híbrida ligadas por nossa tecnologia híbrida exclusiva RackConnect, de modo que você possa "comprar a base e lucrar com o pico".</li>
+	<li><strong>Nosso conhecimento em Magento</strong> – Com a Rackspace, você está nas mãos de um parceiro de hospedagem Magento de qualidade comprovada, que pode guiá-lo na arquitetura da sua solução Magento e configurá-la para o desempenho ideal.</li>
+	<li><strong>Relacionamentos com os principais parceiros de soluções Magento</strong> – Nossas alianças importantes com os principais parceiros de soluções Magento nos permitirá fornecer suporte de ponta a ponta para uma experiência completa.</li>
+	<li><strong>Conformidade com o PCI</strong> – Proporcionando a você os requisitos de infraestrutura e de soluções que podem ajudar a reduzir o escopo e a complexidade de seus esforços de conformidade.</li>
+	<li><strong>Experiência em TI</strong> – Uma equipe de funcionários especialistas em segurança, banco de dados, redes, aplicativos e infraestrutura disponíveis todos os dias, o dia todo.</li>
+	<li><strong>Suporte Fanático</strong> – De assistência para desenvolvimento estratégico oferecida por nossa equipe de serviços de consultoria ao planejamento personalizado de arquitetura de nossos arquitetos de soluções, oferecemos soluções integrais de comércio eletrônico de ponta a ponta, com apoio 24x7x365 de nosso lendário <a href="http://www.rackspace.com/pt/whyrackspace/support/">Suporte Fanático</a>.</li>
+</ul>
+
+<h3>7. Visão geral de soluções Rackspace para varejo on-line</h3>
+
+<p>Além de fornecer soluções para hospedagem de comércio eletrônico, a Rackspace pode ajudar os varejistas em sua jornada para a experiência de varejo de próxima geração com as seguintes soluções:</p>
+
+<ul>
+	<li><strong>Comércio por dispositivos móveis</strong> – Além de dinamizar seu site de comércio eletrônico, a Rackspace também dá suporte à hospedagem de <a href="http://www.rackspace.com/pt/mobile-cloud/">sites de comércio por dispositivos móveis</a>.</li>
+	<li><strong>Desenvolvimento de aplicações personalizadas</strong> – Como provedor de hospedagem SaaS líder do setor, a Rackspace oferece sua grande experiência em hospedagem e diversos produtos e serviços para o <a href="http://www.rackspace.com/pt/enterprise_hosting/saas/">desenvolvimento de aplicações personalizadas</a>.</li>
+	<li><strong>Páginas de campanha</strong> – A Rackspace oferece infraestrutura de hospedagem para <a href="http://www.rackspace.com/pt/enterprise_hosting/campaigns/">desenvolver micro-sites</a> e apoiar suas iniciativas de marketing.</li>
+	<li><strong>Hospedagem de site corporativo</strong> – O site corporativo é, frequentemente, a primeira e principal interação que os clientes (e o mundo) estabelecem com seus produtos, serviços e marca. A Rackspace pode ajudá-lo a <a href="http://www.rackspace.com/pt/hosting_solutions/websites/">hospedar seu site corporativo</a>.</li>
+	<li><strong>Avaliação e desenvolvimento</strong> – <a href="http://www.rackspace.com/pt/hosting_solutions/testdev/">Ambientes de computação isolados usados ​​para desenvolver</a>, realizar o controle de qualidade e testar novas aplicações/sites ou verificar se a mudança em aplicações/sites existentes está disponível.</li>
+	<li><strong>Análise de Big Data</strong> – Por meio da nossa parceria com a Hortonworks, a primeira distribuição corporativa Apache Hadoop de código aberto, oferecemos três diferentes modelos de implementação para resolver suas <a href="http://www.rackspace.com/pt/big-data/">necessidades de Big Data </a> com base no tamanho e complexidade de suas cargas de trabalho em servidores dedicados e de nuvem.</li>
+	<li><strong>E-mail hospedado</strong> – A <a href="http://www.rackspace.com/pt/email-hosting/">hospedagem de e-mail Rackspace</a> dá a você a capacidade de gerenciar com segurança o e-mail a partir de qualquer navegador web ou o dispositivo à sua escolha – sem a necessidade de monitorar licenças ou baixar softwares.</li>
+	<li><strong>SharePoint<sup>®</sup> hospedado</strong> – Oferecemos <a href="http://www.rackspace.com/pt/enterprise_hosting/sharepoint/">serviços de hospedagem de SharePoint</a> dedicados e para vários inquilinos para colaboração na sua organização.</li>
+</ul>
+
+<p><img alt="" height="350" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-chapt8.png" width="501" /></p>
+
+<h3>8. Sumário</h3>
+
+<p>A Magento Enterprise oferece uma tecnologia de código aberto inovadora e é uma das plataformas de comércio eletrônico que mais cresce. Por causa de seu nível de sofisticação, pode requerer conhecimentos avançados quando se trata de ambiente de hospedagem corporativa. Baseado na sua relação de longa data e mais de 1.000 implementações Magento, a hospedagem Rackspace tem experiência de alto nível com ambientes Magento. Esse histórico deu à Rackspace experiência técnica profunda com a Magento Enterprise. Acrescente a isso o Suporte Fanático e a infraestrutura híbrido e a Rackspace tornar-se um fornecedor altamente qualificada de hospedagem dedicada para sites corporativos de comércio eletrônico que usam Magento Enterprise.</p>
+
+<p><strong><img alt="" height="76" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/magento-logoend.png" width="199" />SOBRE A MAGENTO</strong></p>
+
+<p>A Magento oferece soluções para comércio eletrônico flexíveis e expansíveis, concebidas para ajudar as empresas a crescer e ter sucesso on-line. A plataforma da Magento conta com a confiança de mais de 150.000 empresas, incluindo algumas das principais marcas do mundo. Os clientes escolhem A Magento porque nossas soluções de baixo custo – baseadas em tecnologia de código aberto – permitem que empresas de todos os tamanhos controlem e personalizem a aparência, o conteúdo e a funcionalidade de suas lojas on-line. Oferecemos uma gama de recursos, suporte e serviços de consultoria para ajudar nossos clientes a obter o máximo de suas implementações Magento, incluindo ensino, treinamento e programas de certificação de desenvolvedores. Nossa comunidade global de parceiros e desenvolvedores oferece aos clientes acesso a sólidas extensões de terceiros e ajuda de integração profissional certificada. A Magento é de propriedade da eBay Inc., líder global em tecnologias de comércio. Nossa relação nos permite oferecer aos nossos clientes, parceiros e membros da comunidade uma riqueza de experiência e recursos em tecnologias ligadas ao comércio, além de acesso recursos de marca de classe internacional, do eBay Marketplaces, PayPal e GSI Commerce, entre outros. Se é sua primeira vez trabalhando com a Magento, seja bem-vindo. Estamos ansiosos para ajudá-lo a fazer sua empresa crescer.<br />
+<br />
+<strong>Referências:</strong><br />
+<br />
+[1] Estatísticas de utilização Magento – http://trends.builtwith.com/shop/Magento<br />
+[2] http://www.magentocommerce.com/, em 29/03/2013<br />
+[3] http://www.magentocommerce.com/product/enterprise-edition, em 29/03/2013</p>
+ificada. Magento es propiedad de eBay Inc., líder mundial en tecnología para el comercio. Nuestra relación nos permite ofrecer a nuestros clientes, socios y miembros de la comunidad una gran cantidad de experiencia y recursos de tecnologías relacionadas con el comercio, así como acceso a capacidades de marca de primera clase de mercados de eBay, PayPal y GSI Commerce, entre otros. Si es nuevo en Magento, bienvenido. Esperamos poder ayudarlo a que haga crecer su negocio.<br />
+<br />
+<strong>Referencias:</strong><br />
+<br />
+[1] Estadísticas de uso de Magento - http://trends.builtwith.com/shop/Magento<br />
+[2] http://www.magentocommerce.com/, al 29/03/2013<br />
+[3] http://www.magentocommerce.com/product/enterprise-edition al 29/03/2013</p>

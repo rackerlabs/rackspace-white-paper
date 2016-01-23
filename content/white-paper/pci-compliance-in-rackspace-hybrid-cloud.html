@@ -1,0 +1,271 @@
+---
+node_id: 3636
+title: PCI Compliance in Rackspace Hybrid Cloud
+type: whitepaper
+created_date: '2013-08-06'
+created_by: Rackspace Support
+last_modified_date: '2015-07-21'
+last_modified_by: Max Francisco
+product: White Paper
+product_url: white-paper
+resource: 'https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/PCI_Compliance_Rackspace_Hybrid_Cloud.pdf'
+---
+
+<p>Autores:<br />
+Mahesh Gande, director sénior de soluciones<br />
+Francis Ofungwu, gerente de productos de soluciones de seguridad de Rackspace<br />
+Jarret Raim, gerente de productos de seguridad en la nube de Rackspace<br />
+Lizetta Staplefoote, estratega de contenido en línea</p>
+
+<p><strong>1. INTRODUCCIÓN</strong></p>
+
+<p>Trabajar con la industria de tarjetas de pago: las normas de seguridad de datos (PCI-DSS) pueden ser un ejercicio complejo y costoso para los minoristas de comercio electrónico promedio. Esto puede explicar por qué el 96% de las víctimas por incumplimiento en el 2011 falló en la última evaluación o nunca se ha validado.<sup>1</sup></p>
+
+<p>No existe un mismo enfoque para todos en cuanto a lograr y mantener el cumplimiento de las normas. Los comerciantes sin la experiencia para ejecutar un programa efectivo de cumplimiento de normas deben buscar la orientación de parte de socios externos para complementar las carencias de conocimiento y las deficiencias de infraestructura.</p>
+
+<p><strong>2. LOS 12 REQUISITOS DEL CUMPLIMIENTO DE NORMAS PCI-DSS</strong></p>
+
+<p>PCI-DSS es un conjunto de requisitos generales para mejorar la seguridad de datos de la cuenta de pago. La norma fue desarrollada por el PCI Security Standards Council, que incluye American Express, Discover Financial Services, JCB International, MasterCard Worldwide y Visa para ayudar a facilitar la amplia adopción de medidas coherentes de seguridad de datos en una base global.<br />
+<br />
+El <strong><em>82% de las operaciones que han incumplido no obedecieron las nomas de PCI-DSS para la protección de datos almacenados</em></strong><sup><strong><em>2</em></strong></sup></p>
+
+<p>El cumplimiento de normas PCI se divide en 12 pasos dentro de las seis categorías de protección:</p>
+
+<p><strong>1. Crear y mantener una red segura</strong><br />
+<br />
+<strong>• Requisito 1:</strong> Instalar y mantener una configuración de firewall para proteger los datos de los titulares.<br />
+Establece las normas de firewall y de configuración del enrutador que exigen pruebas, procedimientos de prueba y una revisión de la norma de configuración se establece cada seis meses.</p>
+
+<p><strong>• Requisito 2:</strong> No utilizar las opciones predeterminadas del proveedor para configurar contraseñas del sistema y otros parámetros de seguridad.<br />
+Aborda la limpieza de contraseñas con respecto a las contraseñas proporcionadas por los proveedores, que al combinarse con herramientas de hackers que puedan mostrar todos sus dispositivos en red puede convertirlo en una presa fácil para la entrada no autorizada.</p>
+
+<p><strong>2. Proteger los datos de los titulares</strong><br />
+<br />
+<strong>• Requisito 3:</strong> Proteger los datos almacenados de los titulares de tarjetas<br />
+Define el almacenamiento, la codificación y la retención de los datos de los titulares y los datos de autenticación para los usos comerciales requeridos. También cubre la documentación y protección de las claves utilizadas para codificar los datos de titulares.</p>
+
+<p><img alt="" height="211" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/new1.png" width="434" /></p>
+
+<p><strong>• Requisito 4:</strong> Codificar la transmisión de los datos de los titulares a través de redes públicas y abiertas<br />
+Se refiere a la implementación de sólidos protocolos de criptografía y seguridad, como SSL/TLS, SSH o IPSec para proteger los datos delicados de los titulares durante la transmisión de redes públicas abiertas (Internet y móvil). Además, las redes inalámbricas que transmiten datos de los titulares o conectadas al entorno de los datos de los titulares deben utilizar las mejores prácticas de la industria para implementar una codificación sólida para la autenticación y transmisión.</p>
+
+<p><strong>3. Mantener un programa de administración de vulnerabilidades</strong><br />
+<br />
+<strong>• Requisito 5:</strong> Usar y actualizar regularmente software o programas antivirus<br />
+Cualquier sistema que pueda verse afectado por malware debe ser protegido con el software de antivirus actual que funciona de manera activa y genera registros de auditoría.</p>
+
+<p><strong>• Requisito 6:</strong> Desarrollar y mantener sistemas y aplicaciones de seguridad<br />
+El código de aplicación debe ajustarse a las pautas de codificación segura que incluyen la revisión de la aplicación personalizada y el código externo para identificar las vulnerabilidades.</p>
+
+<p><strong>4. Implementar medidas firmes de control de acceso </strong></p>
+
+<p><strong><strong>• </strong>Requisito 7:</strong>Limitar el acceso a los componentes del sistema y a los datos de titulares, solo a aquellas personas cuyas tareas necesitan de ese acceso<br />
+Para proteger los datos críticos del acceso por parte de personal no autorizado dentro y fuera de la empresa, deben existir sistemas y procesos documentados para restringir el acceso a los datos de los titulares utilizando controles de acceso basados ​​en roles (RBAC, por sus siglas en inglés) configurados en "denegar todo", a menos que se conceda específicamente el acceso a los datos y los sistemas de los de los titulares.</p>
+
+<p><strong>• Requisito 8:</strong> Asignar una identificación única<br />
+Cualquier usuario al que le conceda acceso a los datos de titulares deberá tener una identificación única para que las medidas tomadas en los datos y sistemas críticos sean implementadas y puedan ser rastreadas por usuarios conocidos y autorizados. Este requisito también incluye disposiciones sobre el uso de la autenticación de dos factores a través del token y el almacenamiento de las contraseñas de usuario.</p>
+
+<p><strong>• Requisito 9:</strong> Restringir el acceso físico a los datos de los titulares<br />
+Para proteger de los medios físicos que contienen datos de los titulares que son eliminados o están en riesgo, áreas donde dispositivos, datos, sistemas o copias en papel de los datos de titulares deben ser restringidas al acceso general. Esto se aplica tanto a los sistemas electrónicos de todos los comerciantes en línea y recibos en papel como a los sistemas de punto de venta y establecimientos tradicionales.</p>
+
+<p><strong>5. Monitorear y probar las redes regularmente</strong><br />
+<br />
+<strong>• Requisito 10:</strong> Hacer un seguimiento de y monitorear todo acceso a los recursos de red y a los datos de titulares<br />
+Los mecanismos de registro y la capacidad de hacer un seguimiento de las actividades del usuario son importantes para el análisis forense y la gestión de vulnerabilidades adecuados. Los registros deben chequear las acciones específicas y crear una pista de auditoría, que incluyen, como mínimo: identificación del usuario, tipo de evento, fecha y hora, indicios de éxito o fallo, origen del evento e identidad o nombre de los datos, componentes del sistema o recursos afectados. Se deben revisar estos registros diariamente y conservar las pistas de auditoría durante al menos un año.</p>
+
+<p><strong>• Requisito 11:</strong> Evaluar regularmente los sistemas y procesos de seguridad<br />
+Ejecutar los análisis de vulnerabilidad de las redes internas y externas, al menos trimestralmente y después de cualquier cambio importante en la red o infraestructura, la actualización o modificación de la aplicación. Después de aprobar el análisis inicial de cumplimiento de normas, los comerciantes tienen que aprobar otros cuatro análisis trimestrales consecutivos de un proveedor de análisis aprobado (ASV, por sus siglas en inglés) como requisito para el cumplimiento de normas. Esta disposición también incluye el uso de sistemas de detección de intrusiones (IDS, por sus siglas en inglés) actualizados y herramientas de monitoreo de la integridad de archivos para comprobar y alertar al sistema de una modificación en riesgo o no autorizada de los archivos indispensables.</p>
+
+<p><em><strong>Solo el 6% de las organizaciones que han incumplido informaron tener pruebas y procesos regulares de los sistemas de seguridad.<sup>3</sup></strong></em></p>
+
+<p><strong>6. Mantener una política de seguridad de la información </strong></p>
+
+<p><strong><strong>• </strong>Requisito 12:</strong> Mantener una política que aborde la seguridad de la información para todo el personal</p>
+
+<p>Establecer, publicar, actualizar y difundir una política de seguridad que aborde los requisitos de cumplimiento de normas. Esta política debe incluir un proceso de revisión anual para identificar las vulnerabilidades y evaluar formalmente los riesgos. También se requieren políticas de uso definidas para selección de empleados, acceso remoto, inalámbrico, medios electrónicos extraíbles, laptops, tablets, dispositivos portátiles, correo electrónico e Internet.</p>
+
+<p><strong>3. ¿QUIÉN NECESITA EL CUMPLIMIENTO DE NORMAS PCI-DSS?</strong></p>
+
+<p>Si su empresa cumple con cualquiera de estos criterios, usted debe tener una estrategia PCI-DSS en el lugar:<br />
+<br />
+• ¿Almacena, procesa o transmite datos de los titulares*?<br />
+• ¿Proporciona servicios a los comerciantes que procesan, almacenan o transmiten datos de los titulares*?<br />
+*Hace referencia a un PAN (número de cuenta primario) además del nombre del titular, fecha de vencimiento, código de servicio</p>
+
+<p><strong>Comprender los niveles comerciales y los tipos de validación PCI-DSS</strong></p>
+
+<p>El proceso y la frecuencia del cumplimiento de normas de validación con estos 12 pasos están determinados por su nivel comercial y los tipos de evaluación de seguridad que se detallan a continuación:</p>
+
+<p><img alt="" height="195" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci2a.png" width="499" /></p>
+
+<p>Su tipo de validación determina qué SAQ debe completar.</p>
+
+<p><img alt="" height="220" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci3a.png" width="502" /><br />
+*Esto es un ejemplo de las clasificaciones de la marca de la tarjeta VISA. Existen otras normas de la industria.</p>
+
+<p><strong>¿Por qué es importante el cumplimiento de normas?</strong></p>
+
+<p>El incumplimiento de normas PCI-DSS puede conducir a:<br />
+• Pérdida de la reputación<br />
+• Aumento de los costos para la aceptación de transacciones con tarjeta de crédito<br />
+• Multas considerables asociadas con las violaciones a y el incumplimiento de la seguridad</p>
+
+<p>En caso de que ocurra una violación como resultado de un incumplimiento, hay costos de búsqueda y control para investigar el incidente, gastos de compensación, honorarios de abogados y costas judiciales además de:</p>
+
+<p>• Pérdida de confianza del cliente<br />
+• Pérdida de ventas e ingresos<br />
+• Degradación de la marca o caída de valor público en la bolsa<br />
+• Multas y sanciones por incumplimiento de normas PCI-DSS<br />
+• Terminación de la capacidad de aceptar tarjetas de pago<br />
+• Pérdidas por fraude<br />
+• Costo de emisión de nuevas tarjetas de pago<br />
+• Costos de resolución de disputas<br />
+• Costos de acuerdos legales o juicios</p>
+
+<p><img alt="" height="369" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci4a.png" width="551" /></p>
+
+<p><strong>Asociación para el cumplimientos de normas PCI-DSS</strong></p>
+
+<p>Debido a la complejidad y necesidad de mantener PCI-DSS, muchos comerciantes optan por conseguir socios de soluciones para proporcionar las herramientas necesarias para crear los elementos para la infraestructura del cumplimiento de normas.</p>
+
+<p>Aun habiendo socios involucrados, el cumplimiento de normas PCI-DSS es una responsabilidad doble compartida por usted y su proveedor. El hospedaje con un proveedor que ofrece la infraestructura del cumplimiento de normas PCI-DSS no significa que usted cumpla de manera automática. Por ejemplo, un simple error de codificación puede dejar a un negocio abierto para la explotación, incluso aunque se tengan importantes socios de hospedaje y seguridad. Como puede ver a continuación, cada entidad tiene una responsabilidad:</p>
+
+<p><img alt="" height="276" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/PCI23.png" width="502" /></p>
+
+<p><strong>4. LOGRAR EL CUMPLIMIENTO DE NORMAS PCI-DSS</strong></p>
+
+<p><strong>Preguntas para hacer:</strong></p>
+
+<p>1. ¿Su banco ha hablado con usted acerca de PCI-DSS o estipulado una fecha en la que exigen el cumplimiento de normas? Por qué es importante: puede determinar cuán exigente debe ser su programa de cumplimiento de normas.</p>
+
+<p>2. ¿Ha hablado con su adquiriente sobre el cumplimiento de normas PCI-DSS? Por qué es importante: el adquiriente generalmente es responsable del cumplimiento de normas del comerciante</p>
+
+<p>3. ¿A qué programa de cumplimiento de normas de marca de pago se subscribirá (AMeX, Discover, JCB, Master- Card, Visa)? Por qué es importante: cada marca de pago tiene sus propios requisitos de validación</p>
+
+<p>4. ¿Qué cuestionario de autoevaluación completará? Por qué es importante: busque ayuda de un asesor de seguridad calificado (QSA, por sus siglas en inglés) para determinar qué cuestionario de <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">autoevaluación de PCI Data Security Standard</a> se ajusta a sus procesos comerciales.</p>
+
+<p>5. ¿Usted es un proveedor de servicios, comerciante o ambos? Por qué es importante: para determinar qué requisitos de validación se aplican a su empresa.</p>
+
+<p>6. ¿Tiene recursos internos para impulsar el cumplimiento de normas? Por qué es importante: para identificar las carencias y evaluar dónde los socios aportan más valor.</p>
+
+<p><strong>Opciones disponibles:</strong></p>
+
+<p>El pilar de PCI-DSS es la protección de datos. Las políticas de su compañía y el volumen de transacciones con tarjetas de crédito, junto con otros factores comerciales que no se discuten aquí, deben servir como guía en cuanto al lugar donde decide almacenar estos datos y la forma de protegerlos. Opciones para explorar:</p>
+
+<p><strong>• Almacenar datos de tarjetas de crédito en un proveedor que ofrece la infraestructura del cumplimiento de normas PCI-DSS.</strong></p>
+
+<p><strong>• Almacenar información de tarjeta de crédito utilizando una pasarela de pago externo que transmita el lado del servidor de datos mediante las API. Recopilan los datos y los envían codificados a sus servidores.</strong></p>
+
+<p><img alt="" height="103" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci5a.png" width="499" /></p>
+
+<p>Cómo funciona:</p>
+
+<p>1. Con la solicitud del cliente a facturación, se muestra a su cliente un formulario para recopilar la información de pago requerida. Cuando el cliente envía el formulario, se codifican los datos y luego se envían a sus servidores.</p>
+
+<p>2. Mediante la biblioteca del cliente, se realiza una llamada servidor a servidor (S2S) a la pasarela de pago a fin de completar el procesamiento de la transacción.</p>
+
+<p>3. La pasarela de pago procesa la transacción y devuelve una respuesta a su servidor.</p>
+
+<p>4. Esta respuesta se puede utilizar para mostrar datos relevantes para el cliente en el navegador, como el estado de la transacción.</p>
+
+<p><strong>• Almacenar información de la tarjeta de crédito usando una pasarela de pago externa que transmita los datos desde el navegador del cliente antes de llegar a su servidor.</strong></p>
+
+<p><img alt="" height="287" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci6a.png" width="311" /></p>
+
+<p>Cómo funciona:</p>
+
+<p>1. Con la solicitud del cliente a facturación, se muestra a su cliente un formulario para recopilar la información de pago requerida. Cuando el cliente envía el formulario, los datos se publican directamente en la pasarela de pago a través de una conexión SSL.</p>
+
+<p>2. Luego la pasarela de pago almacena los datos. Debido a que la pasarela de pago redirecciona el cliente a su sitio sin mostrar ningún contenido, el cliente incluso nunca sabe que ha abandonado su sitio.</p>
+
+<p>3. El navegador del cliente solicita el URL al que se redirigió desde su sitio. La cadena de consultas para el URL requerido contiene un token que identifica los datos almacenados desde el Paso 1.</p>
+
+<p>4. Mediante la biblioteca del cliente, usted realiza una llamada servidor a servidor (S2S) a la pasarela de pago a fin de completar el procesamiento de la solicitud. Este paso confirma que si el cliente no completa la redirección a su sitio, la pasarela de pago no completará la transacción.</p>
+
+<p>5. Después de recibir la solicitud de confirmación, la pasarela de pago ejecutará la transacción y enviará una respuesta.</p>
+
+<p><strong>Decidir entre almacenar datos internos o usar la pasarela de pago</strong></p>
+
+<p>Compare el costo de utilizar una pasarela de pago externa con el costo de almacenar información de tarjetas de crédito en su centro de datos o centro de datos de un proveedor. Compare estos cálculos para tomar una decisión:</p>
+
+<p>• Calcular el costo de los productos/servicios adicionales necesarios para almacenar los datos internos de tarjetas de crédito por mes. Rackspace puede ayudarle a crear configuraciones de muestra y proporcionar estimaciones sobre el costo.</p>
+
+<p>• Calcular el costo del uso de una pasarela de pago externa por mes = número de transacciones * costo de la transacción cobrada por la pasarela de pago + ingresos en línea * % de los ingresos a pagar al proveedor de la pasarela de pago.</p>
+
+<p>Si el almacenamiento de datos en el lugar es más costoso que la pasarela, considera la posibilidad de utilizar una. Si el uso de la pasarela de pago es más costoso o una pasarela externa es incompatible con otras políticas de la compañía, considere el almacenamiento de datos en un centro de datos que cumpla con PCI-DSS en servidores dedicados.</p>
+
+<p><strong>Decidir entre transmitir datos desde el servidor o desde el navegador</strong></p>
+
+<p>El uso de las API de los navegadores del cliente excluye la infraestructura de los servidores del alcance del cumplimiento de normas PCI-DSS, ya que todos los datos confidenciales se transmiten entre el usuario y la pasarela de pago.</p>
+
+<p>Cuando usted elige transmitir la información de tarjetas de crédito desde el lado del servidor utilizando las API de la pasarela de pago externa, la infraestructura de su servidor será parte del cumplimiento de normas PCI-DSS, ya que los datos confidenciales se cruzan en su infraestructura.</p>
+
+<p><strong>Solución que cumple con las normas PCI-DSS para Rackspace Dedicated Hosting</strong></p>
+
+<p>Ejemplo de la arquitectura de referencia que cumple con las normas PCI-DSS sin una pasarela de pago:</p>
+
+<p><img alt="" height="319" src="http://f494fe00a131971608ff-3fb62eaa3f125e9bde603735b3681623.r27.cf1.rackcdn.com/security/security-sample-architecture.png" width="406" /></p>
+
+<p>&nbsp;</p>
+
+<p>Use esta tabla para alinear sus necesidades de cumplimiento de normas PCI-DSS con los servicios de Rackspace:</p>
+
+<p><img alt="" height="817" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci7a-chart1b.png" width="551" /></p>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>Solución que cumple con las normas PCI para Rackspace Cloud Hosting</strong><img align="right" alt="" height="153" src="http://images.cdn.rackspace.com/solutions/ecommerce/pci-compliance.gif" width="324" /><br />
+<br />
+Cuando hospeda su ambiente con Rackspace, también puede inscribirse en un procesador de pago por separado que proporcione datos de tarjetas de crédito tokenizados con números o "tokens" sin sentido. Cuando acepta un pago, los datos sin PCI-DSS se envían a su ambiente hospedado de Rackspace, mientras que los datos de tarjetas de crédito tokenizados se envían a su procesador de pagos.</p>
+
+<p>Since your customers’ credit card data does not route to your Rackspace hosted infrastructure—only the payment processor—your Rackspace environment stays out of the scope of your PCI-DSS requirements.</p>
+
+<p>Consulte los <a href="https://cloudtools.rackspace.com/home">socios de herramientas de la nube de Rackspace</a> para obtener servicios de pasarela de pago recomendados de Rackspace:</p>
+
+<p><a href="https://cloudtools.rackspace.com/apps/757?1197262527"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/757/thumbs_112/img1875829224899302087.png" />Stripe</a> es una forma sencilla y fácil de usar para el programador para aceptar pagos en línea. Stripe maneja las formas personalizadas de pago, tarjetas de almacenamiento, suscripciones y pagos directos.</p>
+
+<p>• La mejor opción para: programadores que diseñan aplicaciones de pago mediante API<br />
+• Precio: 2.9% + 30¢ por carga exitosa*<br />
+<a href="https://cloudtools.rackspace.com/apps/757?1478916637">Más</a></p>
+
+<p>&nbsp;</p>
+
+<p><br />
+<a href="https://cloudtools.rackspace.com/apps/621?230940707"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/621/thumbs_112/img2786457282233237070.png" />Braintree</a> es una plataforma de pagos completamente integrada para aplicaciones móviles y sitios web. El servicio proporciona cuenta de comerciante, pasarela de pago y almacenamiento recurrente de facturación y de tarjetas de crédito, incluidos los pagos de un solo toque en SDK móviles y la aceptación de moneda extranjera.</p>
+
+<p>• La mejor opción para: programadores que diseñan aplicaciones de pago mediante API<br />
+• Precio: 2.9% + 30¢ por carga exitosa*<br />
+<a href="https://cloudtools.rackspace.com/apps/621?230940707">Más</a></p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://cloudtools.rackspace.com/apps/791?163191746"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/791/thumbs_112/img6350419810339149849.png" /></a>Con cuentas activas de más de 123 millones en 190 mercados y 25 monedas en todo el mundo, <a href="https://cloudtools.rackspace.com/apps/791?163191746">PayPal</a> permite el comercio global a través de dispositivos móviles y en la tienda. El servicio cuenta con investigación automática de fraudes, política de protección al vendedor y la opción de financiamiento BillMeLater®.</p>
+
+<p>• La mejor opción para: manejo de monedas internacionales<br />
+• Precio: 2.9% + 30¢ por carga exitosa*<br />
+<a href="https://cloudtools.rackspace.com/apps/791?163191746">Más</a></p>
+
+<p>&nbsp;</p>
+
+<address>*precios y características señalados a partir del escrito de este documento</address>
+
+<p><strong>CONCLUSIÓN</strong></p>
+
+<p>Un paso clave para un programa exitoso de cumplimiento de normas es el establecimiento de una gestión continua de personas, procesos y tecnología. Es un error muy común para muchas organizaciones pequeñas y grandes creer que invertir exclusivamente en tecnologías resolverá sus requisitos de seguridad y cumplimiento de normas. Las tecnologías como firewalls, sistemas de detección de intrusiones (IDS) y dispositivos de administración de registros tienen un nivel de efectividad que depende de las personas que las instalan y administran y los procesos utilizados para hacerlo.</p>
+
+<p>Esta es una lección que Transport for London (TFL), responsable de la gestión de los servicios de transporte en la capital de Inglaterra, aprendió al tratar de lograr el cumplimiento de normas PCI-DSS para su sistema de pago de viajes. El sistema procesaba hasta 40,000 visitas por día con más de 2.5 millones de usuarios registrados. Siendo una empresa que trabaja las 24 horas, los 365 días al año, no podían arriesgarse al incumplimiento u otras operaciones de interrupción. Optaron por Rackspace para obtener las piezas del rompecabezas que necesitaban para lograr el <a href="http://www.rackspace.com/es/security/domains/#pci">cumplimiento completo de normas.</a> "Probablemente sea cierto que sin la ayuda considerable de Rackspace no podríamos haber aprobado la auditoría extremadamente estricta de PCI-DSS. Rackspace sin duda fue más allá de sus funciones para garantizar que todo sea perfecto para nosotros", afirmó Aingaran Somaskandarajah, líder técnico de Oyster Card.</p>
+
+<p>Permita que Rackspace sea su socio de confianza en el trayecto de PCI-DSS. Podemos ayudarle a navegar el laberinto con requisitos de infraestructura y soluciones que pueden ayudar a reducir el alcance y la complejidad de sus esfuerzos de cumplimiento. <a href="http://www.rackspace.com/es/ecommerce-hosting/pci/">Contáctenos hoy para hablar sobre sus necesidades o explorar ahora los servicios de cumplimiento de normas PCI-DSS.</a></p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://www.rackspace.com/ecommerce-hosting/"><img alt="" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/pci8a.png" /></a></p>
+
+<p><strong>References:</strong></p>
+
+<p><sup>1</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
+<sup>2</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
+<sup>3</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
+<sup>4</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
+<sup>5</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
+<sup>6</sup> <a href="http://www.verizonenterprise.com/DBIR/2013/">http://www.verizonenterprise.com/DBIR/2013/</a></p>

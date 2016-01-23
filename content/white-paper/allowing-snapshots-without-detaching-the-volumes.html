@@ -1,0 +1,38 @@
+---
+node_id: 3614
+title: Allowing Snapshots Without Detaching the Volumes
+type: whitepaper
+created_date: '2013-07-12'
+created_by: Rackspace Support
+last_modified_date: '2015-01-23'
+last_modified_by: Jered Heeschen
+product: White Paper
+product_url: white-paper
+resource: 'https://www.rackspace.com/knowledge_center/sites/default/files/whitepaper_pdf/Allowing Snapshots without Detaching the Volumes_0.pdf'
+---
+
+<p><strong><em>by John Strunk</em></strong></p>
+
+<p>One of the most common things the Cloud Block Storage&nbsp;team hears from you, our customers, is:</p>
+
+<p><strong><em>"Allowing snapshots without detaching the volumes would be a really handy solution for data protection, just saying…"</em></strong></p>
+
+<p>This brings up a number of interesting points, but let’s concentrate on one area: the decision to recommend detaching volumes before issuing a snapshot is a "best practice" decision that offers the least amount of resistance for clients to have a correct snapshot created.</p>
+
+<p>Sometimes this can lead to a misunderstanding about what occurs when a snapshot happens and what occurs in the Cloud Block Storage background when one is issued.</p>
+
+<p>Let me start by explaining that there is nothing magical about how we do snapshots. A snapshot is a logical volume manager (LVM) snapshot of the volume you have control over. When a client issues a snapshot request, the snapshot is instantaneous. As soon as the client receives the successful 200 response from a snapshot request on a volume, it has already been completed. The volume originates at the point in time from when the request was received and exists on the storage node. The status of the snapshot shows "Creating," which is a misnomer as the snapshot is already done, but there are other processes still being completed in the background while in this "Creating" status. After the snapshot is created, the blocks of this snapshot are then deduped and compressed against the last snapshot (if there is one). Only the differential block changes are calculated. These differential blocks are then sent to Cloud Files for long term storage, where each object is preserved in triplicate. The "Creating" status includes the time to calculate and transfer these block changes over the network. The status changes to "Available" on that snapshot when it is completed.</p>
+
+<p>The decision to call this status “Creating” is an OpenStack Cinder decision and is how our driver implements these calls - it is likely to be unchanged for now. But we are looking into adding progress bars and/or warnings/messages in the control panel to help explain what is going on during the process.</p>
+
+<h4>How LVM Works</h4>
+
+<p>Now let’s look at how LVM works. When you take the Cloud Block Storage&nbsp;and iscsi/virtual disk part out of the picture, LVM has certain caveats. Here is a good refresher on how LVM snapshots work:</p>
+
+<p><a href="http://arstechnica.com/information-technology/2004/10/linux-20041013/">http://arstechnica.com/information-technology/2004/10/linux-20041013/</a></p>
+
+<p>The problem is that even though LVM is "instant and point in time," when a file system is in use, mounted and possibly being written to, there is a chance that an LVM snapshot isn't going to be what you expected to have backed up because there is data in flight. This means a snapshot could be corrupted (after the fact, tools like file system check (fsck) can repair some corrupted snapshots, but will not have the in-flight data) or not exactly what you thought you were backing up because data wasn't finalized on the operating systems side. The only way to definitively prevent this is to issue a file system stop, unmount the drive, I/O pause, etc., and then issue the LVM snapshot, and resume operations once the LVM snapshot request returns. Certain file systems like XFS have tools for this like xfs_freeze, which commits a file system sync and further file system access is denied until unfrozen. Some files systems have this, others don't. So in order to prevent this data in-flight issue, the recommendation is that you unmount the drive completely. Once you've issued the request and received a 200 response, you can again remount / re-attach the volume and begin using it again, even when the status is "Creating." Because the snapshot is done, you no longer have to worry about data in-flight while the rest of the "Creating" processes are occurring in the background.</p>
+
+<p>Again, you don't <strong><em>have to unattach</em></strong> the volume when issuing a snapshot request. However, you expect a snapshot to be what you think you backed up, and customers often don’t take data in-flight into consideration. This is a VERY hard concept to explain to every single customer. So the best practice and recommendation that offers the path of least resistance and ensures that this data is correct and preserved is to first perform a full detach.</p>
+
+<p>If you prefer to allow a snapshot without detaching the drive, there is a --force option in Nova/Cinder, and the Control Panel will still let you do a snapshot request even if it is attached (it gives a warning first). There is no way for Cloud Block Storage&nbsp;to know if the drive is mounted on the operating system side, and Nova only sees "in use," which doesn't differentiate between mounted, actively written to, frozen, etc. So, if you know what you're doing, and you accept the fact that <strong>you could be creating a corrupted snapshot</strong>, you can certainly request one while attached. At the very least, you want to unmount the drive if you don't have appropriate tools for your particular file system.</p>

@@ -21,7 +21,7 @@ matrix:
       # PROD
       - rvm: 2.2.3
         env:
-          # - NEXUS_URL=https://developer.rackspace.com:9000
+          - NEXUS_URL=https://developer.rackspace.com:9000
           - secure: "SA8MTv4GwZN11JJpOcNKKqllAN2mRL60NUKBdsFBXDQ4o3B87arEGDaz+hf/0gZ4LhRD2q9b5L+fUBSJTSRoWPHFwBO4GasRJsLcUcgIwHQ1vRRNApVktoHIairFI9eCfo/rlYcio2hvFZYM+KCUzz+1sjki61To/676kbmzv9koSGia4TXtFFbfTc89jJbEzMt5OMbHQYFTNY+WhmhkVaVJacYN8BsBVcIGZ9zNk1QUa891gzgUmx1yD6PcbQFdt8Ne51HvY5f8YffAcr2lrP/bBFgEt3+HdGWVNzdKC9Yxw2wrQaf8qhpUZuKe251GzjfQJlxWmHl5hBFUJUfpqPNALRFArPxxkKzSHF5O3Jtfa/v4Q0SagRQpxKq0oL6VRFAKHjq6EK1NwyhiwoRUbY9zFdR4Hxx2Nbix+QWodjHfhtU/e8Rk6zXBLixR357NlSEDnannA1RvFAcQ0b4GKhkI1EnD1R/ODsVn0MRMa/4/ffNHOLEL66rKA+fuf9iytRx3WPmxeYyhWW5Ir/6bhweGIFeTzJfADWExzMFIqMrE6NYzybPNUfbbKLcE4TgdRJmV5s4e7uIVzXj9PjZeDNPxnJEa5XRnPLv3CUyX6MYbeYcxHWi+CqwpNbxr5WleiaJuH6fWSg+PGsrTl1MFJ87lkEOvmDBQT07B5bgGp6M="
 
 install:
