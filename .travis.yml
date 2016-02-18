@@ -9,6 +9,7 @@ env:
   global:
       - KC_DOC_ROOT=content
       - KC_BASE_URL=https://github.com/rackerlabs/rackspace-white-paper
+      - URL_PATH="/white-paper/"
 
 matrix:
   include:
