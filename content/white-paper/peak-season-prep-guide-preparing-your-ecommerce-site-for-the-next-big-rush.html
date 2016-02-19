@@ -11,133 +11,105 @@ product_url: white-paper
 resource: 'https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/whitepaper_pdf/Rackspace_Peak_Season_Prep_2014_update.pdf'
 ---
 
-<h3><strong>Introdu&ccedil;&atilde;o</strong></h3>
+<h3>Introduction</h3>
 
-<p>A maioria dos comerciantes conhece bem a temporada de festas. Em lojas f&iacute;sicas, &eacute; a &eacute;poca do ano em que h&aacute; mais contrata&ccedil;&otilde;es para garantir que rostos sorridentes na loja ajudem clientes ansiosos e para que haja caixas suficientes para fechar pedidos rapidamente e sem problemas. Para os varejistas de com&eacute;rcio eletr&ocirc;nico, preparar-se para o pico de tr&aacute;fego n&atilde;o se trata de contratar mais pessoas, e sim ajustar sistemas e processos que trazem, mant&ecirc;m e permitem que os clientes fa&ccedil;am transa&ccedil;&otilde;es facilmente em um site.</p>
+<p>Most retailers are familiar with the holiday rush. In brick and mortars, it's the time of year when more hiring happens to ensure smiling faces in the store to help eager customers and enough cashiers at the registers for fast, stress-free checkout. For an ecommerce retailer, beefing up for peak traffic is less about hiring more bodies and more about tuning up the systems and processes that bring, keep, and allow customers to seamlessly make transactions on a site.</p>
 
-<p>Atrasos no carregamento de p&aacute;ginas n&atilde;o apenas frustram os usu&aacute;rios: agora <a href="http://googlewebmastercentral.blogspot.co.uk/2010/04/using-site-speed-in-web-search-ranking.html">os algoritmos de pesquisa do Google</a> tamb&eacute;m penalizam os sites por carregamentos lentos. Veja, por exemplo, o per&iacute;odo de festas de final de ano, onde as vendas t&ecirc;m come&ccedil;ado mais cedo a cada ano, com alguns varejistas oferecendo promo&ccedil;&otilde;es em outubro e come&ccedil;o de novembro. De acordo com uma pesquisa de 2013 da Shop.org com compradores, mais de 40% dos entrevistados disseram ter come&ccedil;ado as compras em outubro ou antes. Somadas ao crescimento geral das vendas on-line, essas estat&iacute;sticas aumentam a necessidade de uma estrat&eacute;gia bem planejada de com&eacute;rcio eletr&ocirc;nico, tanto no lado voltado para o cliente quanto na infraestrutura subjacente do varejista.</p>
+<p>Lags in page load not only frustrate users, but <a href="http://googlewebmastercentral.blogspot.co.uk/2010/04/using-site-speed-in-web-search-ranking.html">Google's search algorithms</a> now also penalize sites for slow loads. Take the holiday season—the sales have crept earlier and earlier each year, with some retailers offering deals in October and early November. According to a Shop.org survey of shoppers in 2013, more than 40 percent said they started their shopping in October or earlier<sup>1</sup>. Coupled with the overall growth of online sales, these statistics further increase the need for a well-planned ecommerce strategy, both on the customer-facing side and in your underlying infrastructure.</p>
 
-<p>A prepara&ccedil;&atilde;o para um per&iacute;odo de pico &ndash; sejam f&eacute;rias, turismo de ver&atilde;o ou campanha de marketing de longo alcance &ndash; envolve a avalia&ccedil;&atilde;o da infraestrutura e de c&oacute;digos para otimizar a obten&ccedil;&atilde;o de resultados melhores. O fundamental do planejamento de pico de tr&aacute;fego &eacute; testar rigorosamente a capacidade de carregamento de seu sistema previamente para identificar e corrigir pontos de interrup&ccedil;&atilde;o e congestionamentos.</p>
+<p>Getting ready for a peak period, whether it's the holidays, summer tourism, or a far-reaching marketing campaign, involves evaluating both your infrastructure and code to optimize for best results. The cornerstone of peak traffic planning is rigorously load testing your system ahead of time to identify and correct breakpoints and bottlenecks.</p>
 
-<h3><strong>1. Teste seu site antes de aumentos repentinos de tr&aacute;fego</strong></h3>
+<h3>Test your site before a traffice spike</h3>
 
-<p>Testes de carregamento d&atilde;o uma amostra de como seu site ir&aacute; funcionar no momento do pico de tr&aacute;fego. Abaixo, as etapas de alto n&iacute;vel envolvidas em testes de carregamento.</p>
+<p>Load testing gives you a window into how your site will perform when peak traffic arrives. The steps below lay out high-level steps involved in load testing.</p>
 
-<ol start="1">
-	<li><strong>Estabele&ccedil;a os objetivos do teste:</strong> o teste inicial deve ser um teste completo de ponta a ponta. Os testes seguintes s&oacute; podem incidir sobre testes de p&oacute;s-otimiza&ccedil;&atilde;o de p&aacute;ginas ou processos espec&iacute;ficos. Al&eacute;m disso, tenha em mente que diferentes tipos de usu&aacute;rios utilizam o seu site de forma diferente. O tipo "comprador de computador" pode ser dividido em segmentos como consumidores, empresas e governo. O usu&aacute;rio consumidor realiza, teoricamente, um caminho diferente do que um usu&aacute;rio do governo; portanto, &eacute; uma carga diferente no sistema que precisa de otimiza&ccedil;&atilde;o. Ao definir rigorosamente os objetivos do teste e tipos de usu&aacute;rio, voc&ecirc; obt&eacute;m resultados mais definidos para orientar a otimiza&ccedil;&atilde;o. Use seus objetivos para criar uma lista de perguntas que seu teste precisa responder, por exemplo:<br />
-	<br />
-	&bull; Com quantas solicita&ccedil;&otilde;es simult&acirc;neas meu sistema pode lidar em carga m&aacute;xima?<br />
-	&bull; Os tempos de resposta para todos os caminhos de teste s&atilde;o aceit&aacute;veis?<br />
-	&bull; Quais pontos da cadeia est&atilde;o consumindo mais recursos de hardware?<br />
-	&bull; H&aacute; falhas &oacute;bvias causadas por grandes conjuntos de dados, m&uacute;ltiplos usu&aacute;rios simult&acirc;neos, quantidade de produtos no site, funcionalidade do carrinho de compras ou outros fatores?<br />
-	&bull; Existe algum fator acess&iacute;vel &oacute;bvio para otimizar? Por exemplo: consultas de dados desnecess&aacute;rias, caminhos de c&oacute;digo usados &ZeroWidthSpace;&ZeroWidthSpace;com frequ&ecirc;ncia que produzem resultado consistente ou consultas a banco de dados repetidas constantemente que podem ser armazenadas em cache.</li>
+<ol>
+	<li><strong>Determine testing goals</strong>: The initial testing should be a complete end-to-end test. Follow up tests may only cover post-optimization testing of specific pages or processes. Also, keep in mind that different types of users use your site differently. A computer buyer may be divided into segments like consumer, business, and government. The consumer user theoretically takes a different path than a government user, hence a different load on the system that needs optimization. By narrowly defining test objectives and user types, you get more defined results to guide optimization. Use your goals to create a list of questions your test needs to answer, for example:
+		<ul>
+			<li>How many concurrent requests can my system handle at maximum load?</li>
+			<li>Are response times for all test paths acceptable?</li>
+			<li>What points in the chain are consuming the most hardware resources?</li>
+			<li>Are there obvious failures caused by large data sets, multiple concurrent users, amount of products on the site, shopping cart functionality, or other factors?</li>
+			<li>Is there any obvious low hanging fruit to optimize? Examples: unnecessary database queries, frequently used code paths that produce a consistent result or frequently repeating database queries that can be cached.</li>
+		</ul>
+	</li>
+	<li><strong>Start with a benchmark</strong>: Review logs and analytics to see how you've performed during previous peak periods and determine what a typical busy load looks like. Use tools like apache bench or autobench to simulate multiple concurrent users for a benchmark of how many requests per second you're capable of serving. Pay special attention to heavily trafficked pages like home and landing pages where optimization efforts have the biggest payoff. To compare your performance and set benchmarks aligned with other retailers, take a look at <a href="http://www.compuware.com/en_us/application-performance-management/Benchmarks/US/Retail/us-retail-web---mobile-site-performance-indices.html.html">Compuware's Retail Web and Mobile Site Performance Index</a>.</li>
+	<li><strong>Determine data collection methods</strong>: Organized data collection is essential to understanding results and learning from them. <a href="http://www.wilsonmar.com/1loadrun.htm">LoadRunner</a> is a software tool that provides sophisticated formatting, flexibility and analysis. <a href="http://msdn.microsoft.com/en-us/library/ms182600%28v%3Dvs.90%29.aspx">Microsoft Visual Studio</a> has a SQL script for creating a database repository for results. Evaluate a prospective test data collection tool based on its ability to:
+		<ul>
+			<li>Thoroughly document the test conditions</li>
+			<li>Accurately document the results</li>
+			<li>Offer a straightforward analysis of results</li>
+			<li>Archive test data for future comparisons<br />
+			Use a set of monitoring tools to obtain accurate data about actual test performance in simple visual graphs:
+			<ul>
+				<li><a href="http://www.cacti.net/">Cacti</a> for capturing metrics</li>
+				<li><a href="https://www.webyog.com/product/monyog">MONyog</a> for monitoring the database</li>
+				<li><a href="https://github.com/etsy/statsd/#statsd-">statsd</a> to put stats logging into code to monitor code performance in real time</li>
+			</ul>
+		</li>
+	</ul></li>
+	<li><strong>Create scripts</strong>: Scripts generate test data and simulate user interaction. The scripts flood the site with requests so that you can identify bottlenecks that occur only during heavy traffic periods. A script will be made for each test path, cookies and all. JMeter is an open source load testing software designed to load test functional behavior and measure performance. JMeter scripts are easy to make into templates, and can be copied and pasted to create new ones. Common scripts include:
+		<ul>
+			<li>Randomly create products</li>
+			<li>Randomly create orders (fill up a cart, then checkout)</li>
+			<li>Randomly create customer accounts (can combine this with creating an order script)</li>
+			<li>Make changes in the admin interface (creating categories, configuration changes)</li>
+		</ul>
+		<p>These scripts will be run both individually and simultaneously to find performance limits.</p>
+	</li>
+	<li><strong>Define the test environment</strong>: In practice, the load test environment contains:
+		<ul>
+			<li>Name of the person running the test</li>
+			<li>The date, time and duration of the run</li>
+			<li>A clearly defined hypothesis</li>
+			<li>A statement of what has changed</li>
+			<li>A set of metrics being tracked during the test</li>
+			<li>A post-run capture of the results of the metrics, best visualized with a graph of the metric over time</li>
+		</ul>
+		<p>By saving this information in spreadsheets, you achieve provable results and can identify the most effective tests.</p>
+		<p>At the completion of the test, you should have a set of data that answers the questions set forth when goals were defined in the beginning. The answers will then guide your next steps for optimization. After optimizing, it's critical to retest to account for any anomalies the optimization may create as fixing one problem can sometimes create another problem that you don't want to wait till you're in the middle of a spike to discover.</p>
+	</li>
 </ol>
 
-<ol start="2">
-	<li><strong>Inicie com um teste de refer&ecirc;ncia:</strong> revise registros e an&aacute;lises para ver como foi seu desempenho durante os per&iacute;odos de pico anteriores e determine como &eacute; um carregamento ativo t&iacute;pico. Use ferramentas como apache bench ou autobench para simular v&aacute;rios usu&aacute;rios simult&acirc;neos para um valor de refer&ecirc;ncia de quantos pedidos por segundo voc&ecirc; &eacute; capaz de atender. Preste aten&ccedil;&atilde;o especial a p&aacute;ginas com tr&aacute;fego intenso, como a p&aacute;gina inicial e p&aacute;ginas de destino, em que os esfor&ccedil;os de otimiza&ccedil;&atilde;o t&ecirc;m maior retorno. Para comparar o seu desempenho e estabelecer padr&otilde;es de refer&ecirc;ncia alinhados com outros varejistas, d&ecirc; uma olhada em <a href="http://www.compuware.com/en_us/application-performance-management/Benchmarks/US/Retail/us-retail-web---mobile-site-performance-indices.html.html">&iacute;ndice de desempenho de sites de varejo da web e para dispositivos m&oacute;veis da Compuware</a>.<br />
-	<br />
-	&nbsp;</li>
-	<li><strong>Determine os m&eacute;todos de coleta de dados:</strong> a coleta de dados organizada &eacute; essencial para compreender os resultados e aprender com eles.&nbsp;<a href="http://www.wilsonmar.com/1loadrun.htm">LoadRunner</a> &eacute; uma ferramenta de software que fornece formata&ccedil;&atilde;o, flexibilidade e an&aacute;lise sofisticadas. <a href="http://msdn.microsoft.com/en-us/library/ms182600%28v%3Dvs.90%29.aspx">Microsoft Visual Studio</a> tem um script SQL para a cria&ccedil;&atilde;o de um reposit&oacute;rio de dados para obter resultados. Avalie um instrumento de coleta de dados de teste em potencial com base na capacidade desse instrumento para:<br />
-	<br />
-	&bull; Documentar completamente as condi&ccedil;&otilde;es de teste<br />
-	&bull; Documentar com precis&atilde;o os resultados<br />
-	&bull; Oferecer uma an&aacute;lise simplificada dos resultados<br />
-	&bull; Arquivar dados de teste para futuras compara&ccedil;&otilde;es<br />
-	Use um conjunto de ferramentas de monitoramento para obter dados precisos sobre o desempenho real do teste em gr&aacute;ficos visuais simples:<br />
-	&bull;&nbsp;<a href="http://www.cacti.net/">Cacti</a> para coletar m&eacute;tricas<br />
-	&bull;&nbsp;<a href="https://www.webyog.com/product/monyog">MONyog</a> para monitorar bancos de dados<br />
-	&bull;&nbsp;<a href="https://github.com/etsy/statsd/#statsd-">statsd</a> para colocar o registro de estat&iacute;sticas em c&oacute;digo e monitorar o desempenho de c&oacute;digo em tempo real</li>
-</ol>
+<h3>Solutions for common issues that testing uncovers</h3>
 
-<ol start="4">
-	<li><strong>Crie scripts:</strong> scripts geram dados de teste e simulam a intera&ccedil;&atilde;o do usu&aacute;rio. Os scripts inundam o site com pedidos para que voc&ecirc; possa identificar congestionamentos que ocorrem apenas durante os per&iacute;odos de tr&aacute;fego pesado. Ser&aacute; feito um script para cada caminho de teste, cookies e todo o restante.&nbsp;<a href="http://jmeter.apache.org/">JMeter</a> &eacute; um software de c&oacute;digo aberto para teste de carregamento projetado para carregar comportamentos funcionais de teste e medir o desempenho. Scripts JMeter s&atilde;o f&aacute;ceis de fazer em modelos, e podem ser copiados e colados para criar novos. Scripts comuns incluem:<br />
-	<br />
-	&bull; Crie produtos aleatoriamente<br />
-	&bull; Crie pedidos aleatoriamente (encha o carrinho e feche o pedido)<br />
-	&bull; Crie aleatoriamente contas de clientes (&eacute; poss&iacute;vel combinar isso com a cria&ccedil;&atilde;o de um script de pedido)<br />
-	&bull; Fa&ccedil;a mudan&ccedil;as na interface de administra&ccedil;&atilde;o (cria&ccedil;&atilde;o de categorias, altera&ccedil;&otilde;es de configura&ccedil;&atilde;o)<br />
-	Esses scripts ser&atilde;o executados individual e simultaneamente para encontrar limites de desempenho.</li>
-</ol>
+<ul>
+	<li><strong>Need load balancing</strong>
+    <p>If site traffic reports reveal an increase in the number of refused connections during load testing, it's time to reassess your load balancing solution. Refused connections are the first sign that your serving capacity is too small for the amount of traffic your site receives. The next sign will probably be visitors calling or emailing to complain that they can't access or transact on your site.</p>
+		<p>The number of load balancers you deploy is determined by your traffic and performance goals; there is no magic formula. Using the data from the load test will help you determine the number and location of load balancers. Once in place, re-test to confirm that the load balancer can handle the expected load.</p>
+	</li>
+	<li><strong>Need better compression</strong>
+		<p>Implementing server-side compression can reduce the size of your store pages by reducing the time to return data from the server and making a web server process available sooner. Most modern browsers and web servers are capable of compressing data to send and decompressing at the destination. This helps lower bandwidth requirements but can increase the CPU loads.</p>
+		<p>Smaller files lead to faster page load times. The two most common options here are to minimize your CSS and JavaScript, removing white space and increasing readability (using a tool like the <a href="http://www.refresh-sf.com/yui/">YUI Compressor</a>), and to reduce the size of your images by removing unnecessary data from them with a tool like <a href="http://www.smushit.com/ysmush.it/">smush.it</a>.</p>
+	</li>
+	<li><strong>Need a content delivery network (CDN)</strong>
+		<p>Using a CDN can help speed up sluggish page loads. On a CDN, the first time content is served to a user, a copy of the content is stored on edge servers geographically closest to that user. Subsequent requests use the stored copy, resulting in faster load time. Hosting landing pages or other heavily trafficked static pages on the CDN helps to maintain a persistent, consistent web presence. As more people visit your site, your landing page will be cached worldwide and as a result load times will improve.</p>
+		<p>Publishing static content to a CDN rather than the web server can be easily accomplished with services like <a href="http://www.rackspace.com/cloud/files/">Rackspace Cloud Files</a>, built with Akamai's CDN technology. W3 Total Cache and PressFlow have built-in CDN technology as well.</p>
+	</li>
+	<li><strong>Need more efficient code</strong>
+		<p>There are many services associated with ecommerce and social media that may provide code for you to place either site-wide or on particular pages. These code snippets, used for social sharing, analytics, widgets, etc., are HTML/JavaScript. Many use external requests to the third party, which lag and may not be cached on their end. Where possible, choose solutions for common page elements that avoid third-party code. Another common solution for troublesome JavaScript is to load the code on document ready (when the DOM is fully loaded), rather than including it in your mark-up directly.</p>
+		<p>Database-heavy sites may benefit from database optimizations, such as schema changes and indexing of commonly queried columns. Avoid using bloated frameworks and libraries.</p>
+	</li>
+	<li><strong>Need full page caching</strong>
+		<p>Caching is an easy way to speed up your application or website which can help with your bounce rate, saving you from potential lost revenue. Determine what data you access frequently and cache it in memory for repeated high-speed access to it. Whether your application is generating static content for web pages or storing sessions in caches, you have to decide how to store those caches. You can store them on your local file system or utilize distributed memory caches like memcached clusters.</p>
+	</li>
+	<li><strong>Need autoscaling</strong>
+		<p>Despite your best planning efforts, your site can still experience spikes outside planned peak capacity. For example, a site may typically run on two servers and occasionally traffic spikes up requiring a third server. If that spike is predictable, your team can hop in ahead of time to provision the extra server and decommission it when it's no longer needed.</p>
+		<p>If that spike is unpredictable, you may be forced to hold on to a third server to cover that spike when or if it happens. With an autoscaling tool, like Rackspace Cloud Tools Marketplace partner, <a href="https://cloudtools.rackspace.com/apps/263?1078639940">RightScale</a>, you don't have to hold on to that third server. By setting traffic, performance, or other variables, the third server is launched only when needed and automatically decommissioned when the launch parameters subside. For more auto scaling tools, visit the <a href="https://cloudtools.rackspace.com/home">Rackspace Cloud Tools Marketplace</a>.</p>
+	</li>
+	<li><strong>Need a hybrid cloud</strong>
+		<p>Many still think that if they can't go all cloud, they can't use cloud at all. Not so. A hybrid cloud configuration lets you buy the base and rent the spike. You're able to put the elements in place that you need to run your site now with the ability to burst into the cloud for traffic spikes or to expand functionality without re-architecting or changing platforms.</p>
+		<p>With <a href="http://www.rackspace.com/cloud/hybrid/">Hybrid Cloud</a>, an ecommerce store can tap cloud efficiencies for caching, image and video storage, or other resource-intensive, non-critical elements while keeping other elements like payment processing and other security-sensitive site elements on private cloud or on-premises gear to meet PCI compliance and other security.</p>
+	</li>
+</ul>
 
-<ol start="5">
-	<li><strong>Estabele&ccedil;a o ambiente de teste:</strong> na pr&aacute;tica, o ambiente de teste de carga cont&eacute;m:<br />
-	<br />
-	&bull; Ferramentas de software para o envio de v&aacute;rias solicita&ccedil;&otilde;es<br />
-	&bull; Scripts para simular a atividade do usu&aacute;rio no site<br />
-	&bull; Scripts para gerar grandes quantidades de dados no sistema<br />
-	&bull; Hardware para administrar ferramentas<br />
-	&bull; Planilhas para acompanhar e analisar resultados<br />
-	<br />
-	O teste pode durar dias e usar recursos valiosos. O teste de carga &eacute; uma forma muito comum de evitar o uso recursos adicionais para executar testes ou a deteriora&ccedil;&atilde;o de outras aplica&ccedil;&otilde;es durante o teste. Usar a nuvem para testes significa que voc&ecirc; pode executar os recursos de CPU conforme necess&aacute;rio em testes durante o tempo que precisar e, em seguida, desfazer esses recursos quando os testes forem conclu&iacute;dos.</li>
-</ol>
+<h3>Plan for peak success with Rackspace</h3>
 
-<ol start="6">
-	<li><strong>Execute os testes:</strong> como a execu&ccedil;&atilde;o de testes pode ser muito demorada, obtenha o m&aacute;ximo de informa&ccedil;&otilde;es poss&iacute;veis de cada teste para evitar repeti&ccedil;&atilde;o. Para fazer isso, crie uma planilha com as seguintes informa&ccedil;&otilde;es:<br />
-	<br />
-	&bull; Nome da pessoa que executa o teste<br />
-	&bull; Data, hor&aacute;rio e dura&ccedil;&atilde;o da execu&ccedil;&atilde;o<br />
-	&bull; Uma hip&oacute;tese claramente definida<br />
-	&bull; Uma declara&ccedil;&atilde;o de o que foi alterado<br />
-	&bull; Um conjunto de m&eacute;tricas acompanhadas durante o teste<br />
-	&bull; A coleta dos resultados das m&eacute;tricas ap&oacute;s a execu&ccedil;&atilde;o, que s&atilde;o mais bem visualizadas com um gr&aacute;fico das m&eacute;tricas ao longo do tempo<br />
-	<br />
-	Ao salvar essas informa&ccedil;&otilde;es em planilhas, voc&ecirc; alcan&ccedil;a resultados demonstr&aacute;veis &ZeroWidthSpace;&ZeroWidthSpace;e pode identificar os testes mais eficazes.<br />
-	<br />
-	Ao final do teste, voc&ecirc; deve ter um conjunto de dados que responde as perguntas estabelecidas quando os objetivos foram definidos no in&iacute;cio. Em seguida, as respostas ir&atilde;o orientar seus pr&oacute;ximos passos para otimiza&ccedil;&atilde;o. Depois de otimizar, &eacute; fundamental testar novamente a fim de esclarecer quaisquer anomalias que a otimiza&ccedil;&atilde;o possa criar, pois a resolu&ccedil;&atilde;o de um problema &agrave;s vezes pode criar outro que voc&ecirc; n&atilde;o quer descobrir quando estiver em meio a um pico.</li>
-</ol>
+<p>When lifestyle brand <a href="http://www.alexandani.com/">Alex &amp; Ani</a> ran an ad for the 2014 Super Bowl, the company knew that site performance was key. “Every second costs money. For every second you add to the loading process, you're reducing your conversion rate by 7 percent, and that adds up,” said Ryan Bonifacio, Alex & Ani Vice President of Digital Strategy. The ad brought 28,000 people to Alex & Ani's website and any lag in loading would have been disastrous. Bonifacio came to Rackspace because he was looking for a hosting partner with the necessary performance experience. “Maximizing uptime was one of our biggest requirements in doing diligence with hosting providers. Rackspace was rated the top,” he said.</p>
 
-<h3><strong>2. Solu&ccedil;&otilde;es para problemas comuns descobertos pelo teste</strong></h3>
+<p>The <a href="http://www.rackspace.com/ecommerce-hosting/">Rackspace ecommerce hosting environment</a> is designed to support customers with resources that effortlessly scale from small to large volumes of traffic. We can help you with the technology needed to develop, test, and scale your site to manage and optimize a spike instead of losing customers.</p>
 
-<p><strong>NECESSIDADE DE LOAD BALANCING</strong></p>
-
-<p>Se os relat&oacute;rios de tr&aacute;fego do site revelam aumento no n&uacute;mero de conex&otilde;es recusadas durante o teste de carga, &eacute; hora de reavaliar a sua solu&ccedil;&atilde;o de load balancing. Conex&otilde;es recusadas s&atilde;o o primeiro sinal de que a sua capacidade de atendimento &eacute; muito pequena para a quantidade de tr&aacute;fego que o site recebe. O pr&oacute;ximo sinal provavelmente ser&aacute; chamadas ou mensagens de visitantes reclamando que n&atilde;o podem acessar ou realizar transa&ccedil;&otilde;es em seu site.</p>
-
-<p>O n&uacute;mero de load balancers que voc&ecirc; implementa &eacute; determinado por seu tr&aacute;fego e metas de desempenho. N&atilde;o h&aacute; f&oacute;rmula m&aacute;gica. Usar os dados do teste de carga ir&aacute; ajud&aacute;-lo a determinar o n&uacute;mero e a localiza&ccedil;&atilde;o dos load balancers. Uma vez estabelecido, refa&ccedil;a o teste para confirmar que o load balancer pode suportar a carga esperada.</p>
-
-<p><strong>NECESSIDADE DE MELHOR COMPRESS&Atilde;O</strong><br />
-Implementar a compress&atilde;o de lado do servidor pode reduzir o tamanho de suas p&aacute;ginas de lojas, diminuindo o tempo para retornar dados do servidor e tornando o processo do servidor web dispon&iacute;vel mais rapidamente. A maioria dos navegadores e servidores web modernos &eacute; capaz de comprimir os dados para enviar e descomprimir no destino. Isso ajuda a diminuir a exig&ecirc;ncia de banda larga, mas pode aumentar as cargas de CPU.</p>
-
-<p>Arquivos menores resultam em tempos de carregamento de p&aacute;gina mais r&aacute;pidos. As duas op&ccedil;&otilde;es mais comuns neste caso s&atilde;o minimizar CSS e JavaScript removendo o espa&ccedil;o em branco e aumentando a legibilidade (com o uso de ferramentas como <a href="http://www.refresh-sf.com/yui/">YUI Compressor</a>) e reduzir o tamanho de suas imagens por meio da remo&ccedil;&atilde;o de dados desnecess&aacute;rios com uma ferramenta como a <a href="http://www.smushit.com/ysmush.it/">smush.it</a>.</p>
-
-<p><strong>NECESSIDADE DE UMA REDE DE FORNECIMENTO DE CONTE&Uacute;DO (CDN)</strong><br />
-Usar uma CDN pode ajudar a acelerar o carregamento lento de p&aacute;ginas. Em uma CDN, a primeira vez que o conte&uacute;do &eacute; servido a um usu&aacute;rio, uma c&oacute;pia do conte&uacute;do &eacute; armazenada em servidores de borda geograficamente mais pr&oacute;ximos ao usu&aacute;rio. As solicita&ccedil;&otilde;es posteriores usam a c&oacute;pia armazenada, resultando em tempo de carregamento mais r&aacute;pido. A hospedagem de p&aacute;ginas de destino ou outras p&aacute;ginas est&aacute;ticas de tr&aacute;fego intenso na CDN ajuda a manter uma presen&ccedil;a persistente e consistente na web. Na medida em que mais pessoas visitam seu site, sua p&aacute;gina de destino ser&aacute; armazenada em todo o mundo e, como resultado, os tempos de carregamento ir&atilde;o melhorar.</p>
-
-<p>A publica&ccedil;&atilde;o de conte&uacute;do est&aacute;tico para uma CDN em vez de servidor web pode ser facilmente obtida com servi&ccedil;os como <a href="http://www.rackspace.com/pt/cloud/files/">Rackspace Cloud Files</a>, criado com tecnologia de CDN da Akamai. W3 Total Cache e PressFlow tamb&eacute;m t&ecirc;m tecnologia de CDN integrada.</p>
-
-<p><strong>NECESSIDADE DE C&Oacute;DIGOS MAIS EFICIENTES</strong><br />
-H&aacute; muitos servi&ccedil;os associados com com&eacute;rcio eletr&ocirc;nico e m&iacute;dias sociais que podem fornecer c&oacute;digos para voc&ecirc; colocar em todo o site ou em p&aacute;ginas espec&iacute;ficas. Esses trechos de c&oacute;digo, usados para compartilhamento social, an&aacute;lise, widgets, entre outros, s&atilde;o HTML/JavaScript. Muitos usam solicita&ccedil;&otilde;es externas para o terceiro, que atrasam e n&atilde;o podem ser armazenados em cache em sua extremidade. Sempre que poss&iacute;vel, opte por solu&ccedil;&otilde;es para elementos de p&aacute;gina comuns que evitem c&oacute;digos de terceiros. Outra solu&ccedil;&atilde;o comum para o problem&aacute;tico JavaScript &eacute; carregar o c&oacute;digo em documento pronto (quando o DOM estiver totalmente carregado), em vez de inclu&iacute;-lo em sua marca&ccedil;&atilde;o diretamente.</p>
-
-<p>Sites com bancos de dados pesados podem se beneficiar de otimiza&ccedil;&otilde;es de banco de dados, como altera&ccedil;&otilde;es de esquema e indexa&ccedil;&atilde;o de colunas consultadas com frequ&ecirc;ncia. Evite o uso de estruturas e bibliotecas infladas.</p>
-
-<p><strong>NECESSIDADE DE CACHE PARA A P&Aacute;GINA INTEIRA</strong><br />
-Caching &eacute; uma maneira f&aacute;cil de acelerar sua aplica&ccedil;&atilde;o ou site que pode ajudar com sua taxa de rejei&ccedil;&atilde;o, poupando-o de potencial perda de receita. Determine os dados que voc&ecirc; acessa frequentemente e armazene-os na mem&oacute;ria para ter acesso de alta velocidade repetido a esses dados. Se sua aplica&ccedil;&atilde;o estiver gerando conte&uacute;do est&aacute;tico para p&aacute;ginas web ou armazenando sess&otilde;es em caches, voc&ecirc; tem de decidir como armazenar os caches. Voc&ecirc; pode armazen&aacute;-los em seu sistema de arquivos local ou utilizar caches de mem&oacute;ria distribu&iacute;da, como clusters memcached.</p>
-
-<p><strong>NECESSIDADE DE AUTOEXPANS&Atilde;O</strong><br />
-Apesar dos esfor&ccedil;os de planejamento, seu site ainda &eacute; capaz de passar por picos fora da capacidade m&aacute;xima esperada. Por exemplo, um site pode funcionar normalmente em dois servidores e, ocasionalmente, o aumento repentino de tr&aacute;fego exigir um terceiro servidor. Se esse aumento for previs&iacute;vel, sua equipe pode sair na frente para configurar o servidor extra e encerr&aacute;-lo quando n&atilde;o for mais necess&aacute;rio.</p>
-
-<p>Se esse pico for imprevis&iacute;vel, voc&ecirc; pode ser for&ccedil;ado a manter um terceiro servidor para cobrir o aumento quando, ou se, isso acontecer. Com uma ferramenta de autoexpans&atilde;o, como a parceira do cat&aacute;logo de solu&ccedil;&otilde;es para nuvem da Rackspace, <a href="https://cloudtools.rackspace.com/apps/263?1078639940">RightScale</a>, n&atilde;o &eacute; necess&aacute;rio manter o terceiro servidor. Mediante a configura&ccedil;&atilde;o de tr&aacute;fego, desempenho ou outras vari&aacute;veis&ZeroWidthSpace;&ZeroWidthSpace;, o terceiro servidor &eacute; iniciado apenas quando necess&aacute;rio e automaticamente encerrado quando os par&acirc;metros de lan&ccedil;amento diminu&iacute;rem. Veja mais ferramentas de autoexpans&atilde;o no <a href="https://cloudtools.rackspace.com/home">Cat&aacute;logo de solu&ccedil;&otilde;es para nuvem da Rackspace</a>.</p>
-
-<p><strong>NECESSIDADE DE UMA NUVEM H&Iacute;BRIDA</strong><br />
-Muitos ainda pensam que, se n&atilde;o podem usar a nuvem completa, n&atilde;o podem usar nada da nuvem. N&atilde;o &eacute; assim. Uma configura&ccedil;&atilde;o de nuvem h&iacute;brida permite que voc&ecirc; compre a base e alugue o pico. Agora voc&ecirc; &eacute; capaz de colocar os elementos no lugar que precisa para administrar seu site com a capacidade de transferir para a nuvem em caso de aumento repentino de tr&aacute;fego ou expandir a funcionalidade sem refazer a arquitetura ou alterar plataformas.</p>
-
-<p>Com a <a href="http://www.rackspace.com/pt/cloud/hybrid/">nuvem h&iacute;brida</a>, uma loja de com&eacute;rcio eletr&ocirc;nico pode ver a efici&ecirc;ncia de nuvem para armazenamento em cache, imagem e v&iacute;deo armazenado, ou outros elementos que consomem muitos recursos e n&atilde;o s&atilde;o fundamentais, mantendo outros elementos &ndash; como processamento de pagamentos e outros elementos importantes para a seguran&ccedil;a do site &ndash; na nuvem privada ou em dispositivos locais, a fim de atender a conformidade com o PCI e outros requisitos de seguran&ccedil;a.</p>
-
-<h3><strong>3. Fa&ccedil;a um plano para ter sucesso no pico com a Rackspace</strong></h3>
-
-<p>Quando a marca de estilo de vida <a href="http://www.alexandani.com/">Alex &amp; Ani</a> lan&ccedil;ou uma propaganda para o Super Bowl 2014, a empresa sabia que o desempenho do site era fundamental. "Cada segundo custa dinheiro. Cada segundo adicionado ao processo resulta em uma redu&ccedil;&atilde;o de 7% na taxa de convers&atilde;o, e isso s&oacute; aumentar&aacute;", disse Ryan Bonifacio, vice-presidente de estrat&eacute;gia digital da Alex &amp; Ani. A propaganda levou 28.000 pessoas ao site da Alex &amp; Ani, e qualquer demora no carregamento teria sido desastroso. Bonifacio procurou a Rackspace, pois precisava de um parceiro de hospedagem com a experi&ecirc;ncia necess&aacute;ria em desempenho. "Maximizar o tempo de funcionamento foi uma das nossas maiores exig&ecirc;ncias ao fazer dilig&ecirc;ncia com provedores de hospedagem. A Rackspace recebeu a melhor avalia&ccedil;&atilde;o", disse.</p>
-
-<p>O <a href="http://www.rackspace.com/pt/ecommerce-hosting/">ambiente de hospedagem para com&eacute;rcio eletr&ocirc;nico da Rackspace</a> foi projetado para dar suporte a clientes com recursos que facilmente passam de pequenos a grandes volumes de tr&aacute;fego. Podemos ajud&aacute;-lo com a tecnologia necess&aacute;ria para desenvolver, testar e programar seu site para gerenciar e otimizar os picos em vez de perder clientes.</p>
-
-<p><a href="http://www.rackspace.com/ecommerce-hosting/"><img align="middle" alt="" height="396" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/peakseaon-1.png" width="589" /></a></p>
-
-<p>References:</p>
-
-<p><sup>1</sup> <a href="https://www.internetretailer.com/2013/02/04/unwrapping-holidays">https://www.internetretailer.com/2013/02/04/unwrapping-holidays</a></p>
-mento repentino de tr&aacute;fico en lugar de perder clientes.</p>
-
-<p>&nbsp;</p>
-
-<p><a href="http://www.rackspace.com/ecommerce-hosting/"><img align="middle" alt="" height="396" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/peakseaon-1.png" width="589" /></a></p>
+<p><a href="http://www.rackspace.com/ecommerce-hosting/"><img align="middle" height="396" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/peakseaon-1.png" width="589" /></a></p>
 
 <p>References:</p>
 
