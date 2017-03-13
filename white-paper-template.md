@@ -21,7 +21,7 @@ white paper.  We strongly recommend that you follow these guidelines in order
 to create a consistent experience for our readers.  Exceptions may be made on a
 case by case basis.
 
-### Executive Summary (requires)
+### Executive Summary (required)
 
 Provide a summary of your complete report content. At least a sentence per
 section is advised: Problem Definition, Solution Details, Results, and
