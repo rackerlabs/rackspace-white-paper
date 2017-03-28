@@ -20,7 +20,7 @@ these things, they lack a real grasp of what they do and how they
 interact. Hopefully this article should shore up your understanding of
 the entire TCP/IP suite.
 
-#### Terms / Jargon
+#### Terms / jargon
 
 Before we dig into the details, it's important that we review and
 define a few terms that you may not have previously learned.
@@ -44,7 +44,7 @@ seconds, but rather in nodes to traverse before dying.
 
 **canonnical (adj.) -** The usual way.
 
-#### Binary Arithmetic
+#### Binary arithmetic
 
 In later portions of this document, we're going to discuss binary
 numbers a good deal, so it's important to have a strong grasp on them
@@ -173,7 +173,7 @@ You can also look at the decimal (base 10) number the very same way.
 Now that you know binary, not only can you count to 31 on one hand, but
 you can also understand concepts like IP addressing and subnetting.
 
-### Five Layers at a Glance
+### Five layers at a glance
 
 The TCP/IP suite makes use of five different layers to get its job
 done. (This isn't strictly true. There are a couple of other layers
@@ -185,7 +185,7 @@ start at the top and slowly work their way down the layers to create a
 network frame.  Each of these layers will be briefly explained now; we
 will go into more depth in later sections.
 
-#### Physical Layer
+#### Physical layer
 
 The lowermost layer in our stack of blocks is the physical layer. This
 layer consists of basically any physical part of your network.
@@ -197,35 +197,35 @@ radio waves, and even infra-red light.  The physical layer turns the
 digital packet into some form of anaolgue signal that can be
 transmitted to another node on the network.
 
-#### Data-Link Layer
+#### Data-link layer
 
 The Data-Link Layer is the first layer of the TCP/IP stack that
 actually crafts part of the packet.  This layer is also responsible for
 determining what machine will receive a packet on any given
 network-layer subnet.
 
-#### Network Layer
+#### Network layer
 
 The Network Layer is responsible for addressing hosts that may or may
 not be on your particular LAN.  It is the only protocol that
 understands routing and can address packets to machines not on your
 LAN.
 
-#### Transport Layer
+#### Transport layer
 
 The Transport Layer is responsible for communicating between the
 Network layer and the Application layer.  It is responsible for
 determining what application a given packet will reach.  It is also the
 only layer that can guarantee data transmission.
 
-#### Application Layer
+#### Application layer
 
 The Application Layer is responsible for formatting the data that will
 be transmitted to a remote host.  It includes most of the higher order
 protocols you may be familiar with such as DHCP, DNS, and HTTP. 
 
 
-### Physical Layer
+### Physical layer
 
 As we discussed, the physical layer is responsible for transforming
 digital signals.  How this happens depends on the transmission media of
@@ -234,7 +234,7 @@ transmit data in voltage fluctuations.  Radio communications send the
 signal along a certain radio frequency.  We'll only discuss the most
 common (copper) below.
 
-#### 802.3 Cabling
+#### 802.3 cabling
 
 802.3 is the IEEE spec that defines ethernet. The most common
 transmission media for Internet traffic is copper cable.  Ethernet has
@@ -348,7 +348,7 @@ the same pairs.  But by connecting a cross-over cable...
 
 ... everything flows smoothly.
 
-#### Voltage Transmission
+#### Voltage transmission
 
 So now that we know what each cable is for, and how to wire up a cable,
 how does a NIC actually transmit data?  To understand this, we have to
@@ -431,7 +431,7 @@ geese.  Every animal there (whether a goose or a gander) has to hear
 our gander's honk. Each ignores that honk, except the one lucky goose
 our gander is addressing. 
 
-### Data-Link Layer
+### Data-link layer
 
 This is the layer where things actually get interesting. The Data-Link
 Layer is responsible for sending packets "somewhere", even if
@@ -440,7 +440,7 @@ Ethernet (802.3) here as it is predominant. Wireless Ethernet (802.11)
 is similar enough that most everything we will discuss here applies to
 it as well.
 
-#### MAC Addressing
+#### MAC addressing
 
 Every NIC, every switch, every modem, every device that connects to a
 network has a Media Access Control (MAC) Address that is set by the
@@ -579,7 +579,7 @@ non-IP networks like Chaosnet. These days, everyone uses Internet
 Protocol. In IPv6, this functionality is handled by the similar
 Neighbor Discovery Protocol (RFC 4861).
 
-### Network Layer
+### Network layer
 
 This is without a doubt the most fun and most difficult layer to learn.
 Without this layer, no machine could address any other machine without
@@ -588,7 +588,7 @@ connected hubs, bridges, and switches.  The Network Layer is
 responsible for determining the final destination of a packet and
 determining just how to get there from here.
 
-#### IP Addressing
+#### IP addressing
 
 Alright, so you all know what an IP address is don't you?  Everyone has
 one these days.  In fact, some of us have lots of them.  They're those
@@ -754,7 +754,7 @@ require a router to pass packets between the two different subnets.
 Today, you'll still hear this terminology from time to time.  People
 often refer to any /24 subnet as a "Class C" network for example.
 
-#### Route Determination
+#### Route determination
 
 Finally!  Things have gotten interesting.  At last we have come to that
 part of networking that allows us to send information in the form of
@@ -853,7 +853,7 @@ redirect a message to a different route.  In short, ICMP is the often
 unseen little janitor of the TCP/IP Suite that keeps everything clean
 and tidy and informs everyone when the floor is wet and slippery.
 
-### Transport Layer
+### Transport layer
 
 The Transport Layer is every bit as simple and complex as the network
 layer.  It is responsible for communicating the wishes of the
@@ -905,7 +905,7 @@ going to discuss the four most common.
 - FIN - Finished sending data
 - RST - Reset connection immediately
 
-##### Connection Initialization
+##### Connection initialization
 
 The three-way handshake is used to initiate a TCP connection.  It's
 responsible for ensuring that both end nodes are available and are
@@ -934,7 +934,7 @@ each packet with an ACK so whippoorwill knows the data was received.
 If for whatever reason, whippoorwill doesn't see an ACK packet for some
 data it sent, it will resend that packet.
 
-##### Connection Termination
+##### Connection termination
 
 So now that we know how to initiate a TCP connection, how do we stop
 one?  The answer is the four-way handshake.
@@ -1021,7 +1021,7 @@ to.  It's important to note though, that UDP and TCP ports are
 exclusive.  UDP port 80 and TCP port 80 are entirely different and
 likely correspond to different applications.
 
-### Application Layer
+### Application layer
 
 The Application Layer is responsible for talking to the Transport
 Layer, and finally talking to the kernel or any user-land applications
@@ -1041,7 +1041,7 @@ us to turn domain names like nightingale.ctsmacon.com into IP Addresses
 like 192.168.1.197.  DNS will play a key roll in some of the examples
 we will use in later sections.
 
-#### DHCP / Bootp
+#### DHCP / bootp
 
 The Dynamic Host Control Protocol is an ingenious method of assigning
 IP Addresses to nodes.  Instead of requiring a person to input an IP
@@ -1054,7 +1054,7 @@ includes all the information that machine needs to setup basic network
 services: IP Address, Subnet Mask, Routers, DNS Servers, and
 optionally much much more.
 
-### Packet Crafting
+### Packet crafting
 
 So now that we know about all the different layers and all the
 different things that play a part in networking, let's build an actual
@@ -1063,7 +1063,7 @@ DNS and assume we know the IP Addresses.  This is a data packet being
 crafted by whippoorwill (172.30.16.28) destined for the webserver at
 www.google.com (74.125.21.105).
 
-#### Application Data
+#### Application data
 
 All packets begin at the Application Layer.  In this case, our
 application is Firefox.  I've just opened it on my workstation, and am
@@ -1079,7 +1079,7 @@ At this point, our packet is nothing but a payload and looks like this:
 
     | Payload |
 
-#### Transport Wrapping
+#### Transport wrapping
 
 Here things become interesting.  This is the first layer that will add
 information to the payload and begin forming something more than just
@@ -1128,7 +1128,7 @@ discussing it now.
 - Options - Another mostly unused field that we will ignore in this
 discussion.
 
-#### Network Wrapping
+#### Network wrapping
 
 Now we get to add actual routing information to the packet.
 
@@ -1195,7 +1195,7 @@ to be recalculated at each point because the TTL value has changed.
 - Options - Again, a variable length field that can contain a lot of
 optional data.
 
-#### Data-Link Wrapping
+#### Data-link wrapping
 
 Now we get to the final step of adding information to the packet.
 
@@ -1233,7 +1233,7 @@ to an md5sum in many ways.
 At this point, the packet is ready for transmission on the physical
 layer.
 
-### All Together Now
+### All together now
 
 Now that we've lovingly crafted a packet by hand, let's fill in the
 values for this packet, and see how it fairs out in the real world.
@@ -1401,12 +1401,12 @@ Or...
     | Payload |
     | Checksum |
 
-### A Day in the TTL of a Packet
+### A day in the TTL of a packet
 
 Well, we've constructed packets and we've learned what everything does.
 Now it's time to look at sets of packets.
 
-#### Traversing the Subnet for Fun and Profit
+#### Traversing the subnet for fun and profit
 
 We've told you that a packet changes; well, now it's time to learn just
 how it changes.  To start with, everytime a packet crosses a router, it
@@ -1674,7 +1674,7 @@ And now the connection is completely torn down.
 Most of these topics cannot be thought of as "fundamental", but could
 be advantageous to know.
 
-#### Packet Encapsulation
+#### Packet encapsulation
 
 Like it's name suggests, packet encapsulation is the process of
 wrapping one packet up inside of another. This is commonly used in VPNs
